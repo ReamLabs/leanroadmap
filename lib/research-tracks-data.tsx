@@ -81,14 +81,13 @@ export const researchTracksData: ResearchTrack[] = [
     progress: 10,
     lead: "Thomas Coratger",
     leadLink: "https://x.com/tcoratger",
-    tags: ["Chain Snarkification"],
+    tags: ["Post-Quantum Signatures", "Chain Snarkification"],
     milestones: [
       { title: "Benchmark hash in SNARK (Plonky3, STwo, Binius, Hashcaster)", completed: true, date: "Feb 2025" },
       { title: "Hashcaster exploration work", completed: true, date: "Feb 2025" },
       { title: "Snarkify hash-based signature aggregation with SP1 & OpenVM", completed: true, date: "Feb 2025" },
       { title: "Explore GKR style provers", completed: false },
       { title: "Explore WHIR", completed: false },
-      { title: "Explore GKR style provers", completed: false },
       { title: "More explorations over binary field techniques", completed: false },
     ],
     resources: [
