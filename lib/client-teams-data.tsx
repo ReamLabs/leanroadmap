@@ -87,6 +87,17 @@ export const clientTeamsData: ClientTeam[] = [
     ],
   },
   {
+    id: "dvlabs",
+    name: "DV Labs",
+    description: "The Obol Collective team building Charon, Ethereum's Distributed Validator middleware client in GoLang.",
+    status: "new",
+    links: [
+      { type: "website", url: "https://dvlabs.tech" },
+      { type: "twitter", url: "https://twitter.com/dv_labs" },
+      { type: "github", url: "https://github.com/obolnetwork" },
+    ],
+  },
+  {
     id: "grandine",
     name: "Grandine",
     description: "The research-focused Ethereum consensus client implementing novel approaches to consensus mechanisms.",
