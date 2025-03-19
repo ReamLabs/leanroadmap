@@ -78,7 +78,7 @@ export const clientTeamsData: ClientTeam[] = [
   {
     id: "nethermind",
     name: "Nethermind",
-    description: "The high-performance .NET Beacon Chain client with enterprise-grade features and extensive APIs.",
+    description: "The high-performance .NET execution client with enterprise-grade features and extensive APIs.",
     status: "new",
     links: [
       { type: "website", url: "https://nethermind.io" },
