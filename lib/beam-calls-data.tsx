@@ -72,7 +72,7 @@ export const beamCallsData: BeamCall[] = [
         type: "slides"
       },
       {
-        title: "Alex's slides on post-quantum Distributed Validators",
+        title: "Alex's slides on post-quantum distributed validators",
         url: "./resources/beam-calls/thbs_beamcall2.pdf",
         type: "slides"
       },

@@ -89,7 +89,7 @@ export const clientTeamsData: ClientTeam[] = [
   {
     id: "dvlabs",
     name: "DV Labs",
-    description: "The Obol Collective team building Charon, Ethereum's Distributed Validator middleware client in GoLang.",
+    description: "The Obol Collective team building Charon, Ethereum's distributed validator middleware client in GoLang.",
     status: "new",
     links: [
       { type: "website", url: "https://dvlabs.tech" },

@@ -68,7 +68,7 @@ export const researchTracksData: ResearchTrack[] = [
     ],
     resources: [
       { title: "Hash-Based Multi-Signatures for Post-Quantum Ethereum", url: "https://eprint.iacr.org/2025/055", type: "paper" },
-      { title: "Towards Hash-Based Multi-Signatures for Post-Quantum Distributed Validators", url: "https://github.com/ObolNetwork/pqdv/blob/main/doc/main.pdf", type: "paper" },
+      { title: "Towards Hash-Based Multi-Signatures for Post-Quantum distributed validators", url: "https://github.com/ObolNetwork/pqdv/blob/main/doc/main.pdf", type: "paper" },
       { title: "Reference implementation in Rust", url: "https://github.com/b-wagn/hash-sig", type: "code" },
     ],
   },
