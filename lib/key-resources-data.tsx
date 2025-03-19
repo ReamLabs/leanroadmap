@@ -11,7 +11,7 @@ export const keyResourcesData: KeyResource[] = [
   {
     icon: Youtube,
     title: "Keynote: [title redacted] at Devcon SEA",
-    url: "https://www.youtube.com/watch?v=Gjuenkv1zrw",
+    url: "https://www.youtube.com/watch?v=lRqnFrqpq4k",
     date: "Nov 2024",
   },
   {
