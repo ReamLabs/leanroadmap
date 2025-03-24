@@ -121,7 +121,7 @@ export const researchTracksData: ResearchTrack[] = [
   {
     id: "formal-verification",
     title: "Formal Verification",
-    description: "Mathematically prove the security properties of cryptographic proof systems like FRI, STU, and WER using the Lean 4 framework, creating structured blueprints that map out theorem dependencies to verify that the zkEVM implementations are correct.",
+    description: "Mathematically prove the security properties of cryptographic proof systems like FRI, STU, and WHIR using the Lean 4 framework, creating structured blueprints that map out theorem dependencies to verify that the zkEVM implementations are correct.",
     icon: <FileCode className="h-5 w-5" />,
     colorClass: "indigo",
     progress: 10,
@@ -132,15 +132,14 @@ export const researchTracksData: ResearchTrack[] = [
       { title: "zkEVM formal verification project initiation", completed: true, date: "Jan 2025" },
       { title: "Lean 4 framework implementation", completed: false, date: "Mar 2025" },
       { title: "FRI proof system specification", completed: false },
-      { title: "STU proof system specification", completed: false },
-      { title: "WER proof system specification", completed: false },
+      { title: "STIR proof system specification", completed: false },
+      { title: "WHIR proof system specification", completed: false },
     ],
     resources: [
       { title: "EF's zkEVM Formal Verification Project", url: "https://verified-zkevm.org/", type: "website" },
       { title: "Formally Verified SNARKs in Lean", url: "https://github.com/Verified-zkEVM/ZKLib", type: "code" },
       { title: "Lean blueprints", url: "https://github.com/PatrickMassot/leanblueprint", type: "code" },
       { title: "zkLib Lean blueprint", url: "https://verified-zkevm.github.io/ZKLib/blueprint/index.html", type: "website" },
-      { title: "Proof example in Lean for Improved Polynomial Division in Cryptography", url: "https://tinyurl.com/bdzhf3e3", type: "website" },
     ],
   },
 ]
