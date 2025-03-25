@@ -38,7 +38,7 @@ export const beamCallsData: BeamCall[] = [
   },
   {
     id: "call-2",
-    title: "Beam Call #2: Technical Layer Updates",
+    title: "Beam Call #2: Post-Quantum Security",
     status: "completed",
     date: "February 28, 2025",
     summary:
