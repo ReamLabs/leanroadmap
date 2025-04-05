@@ -45,6 +45,11 @@ const colorMap = {
     bg: "bg-indigo-100",
     text: "text-indigo-600",
     progressBg: "bg-indigo-500"
+  },
+  teal: {
+    bg: "bg-teal-100",
+    text: "text-teal-600",
+    progressBg: "bg-teal-500"
   }
 } as const
 

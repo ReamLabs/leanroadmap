@@ -1,5 +1,5 @@
 import type { ReactNode } from "react"
-import { Shield, Lock, FileCheck, Cpu, Feather, FileCode } from "lucide-react"
+import { Shield, Lock, FileCheck, Cpu, Feather, FileCode, Waypoints } from "lucide-react"
 
 export interface ResearchTrack {
   id: string
@@ -24,7 +24,7 @@ export interface Milestone {
 export interface Resource {
   title: string
   url: string
-  type: "paper" | "code" | "presentation" | "website"
+  type: "specs" | "paper" | "code" | "presentation" | "website"
 }
 
 export const researchTracksData: ResearchTrack[] = [
@@ -142,4 +142,28 @@ export const researchTracksData: ResearchTrack[] = [
       { title: "zkLib Lean blueprint", url: "https://verified-zkevm.github.io/ZKLib/blueprint/index.html", type: "website" },
     ],
   },
+  {
+    id: "p2p",
+    title: "P2P Networking",
+    description: "",
+    icon: <Waypoints className="h-5 w-5" />,
+    colorClass: "teal",
+    progress: 10,
+    lead: "Pop",
+    leadLink: "https://github.com/ppopth",
+    tags: ["Networking"],
+    milestones: [
+      { title: "Practical Rateless Set Reconciliation research", completed: true, date: "Feb 2024" },
+      { title: "Generalized Gossipsub specification", completed: false },
+      { title: "Gossipsub V2 specification", completed: false },
+      { title: "Grid Topology research", completed: false },
+      { title: "libp2p in C development", completed: false },
+      { title: "libp2p in Zig development", completed: false },
+    ],
+    resources: [
+      { title: "Practical Rateless Set Reconciliation", url: "https://arxiv.org/abs/2402.02668", type: "paper" },
+      { title: "Generalised Gossipsub specification", url: "https://github.com/libp2p/specs/pull/664", type: "specs" },
+      { title: "Gossipsub v2.0 specification", url: "https://github.com/libp2p/specs/pull/653", type: "specs" },
+    ],
+  }
 ]
