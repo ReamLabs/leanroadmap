@@ -21,7 +21,7 @@ export const beamCallsData: BeamCall[] = [
     date: "February 14, 2025",
     summary:
       "The kickoff call covering social layer progress, funding structures, legal updates, introductions of research specialists and client teams, and coordinator presentations",
-    thumbnail: "/placeholder.svg?height=180&width=320",
+    thumbnail: null,
     youtubeUrl: "https://www.youtube.com/watch?v=sSx6juIu4AI",
     resources: [
       {
@@ -43,7 +43,7 @@ export const beamCallsData: BeamCall[] = [
     date: "February 28, 2025",
     summary:
       "Technical updates on post-quantum cryptography solutions, featuring technical presentations from researchers on signature schemes, hash functions, minimal zkVMs, and formal verification.",
-    thumbnail: "/placeholder.svg?height=180&width=320",
+    thumbnail: null,
     youtubeUrl: "https://www.youtube.com/watch?v=BtYb_guRq78",
     resources: [
       {
@@ -85,7 +85,7 @@ export const beamCallsData: BeamCall[] = [
     date: "April 4, 2025",
     summary:
       "Discussion on the latest developments in peer-to-peer networking.",
-    thumbnail: "/placeholder.svg?height=180&width=320",
+    thumbnail: null,
     youtubeUrl: "#",
   },
   {
@@ -95,7 +95,7 @@ export const beamCallsData: BeamCall[] = [
     date: "TBD",
     summary:
       "Discussion on the finality of the 3SF protocol, including its implementation and implications on the network.",
-    thumbnail: "/placeholder.svg?height=180&width=320",
+    thumbnail: null,
     youtubeUrl: "#",
   },
   {
@@ -105,7 +105,7 @@ export const beamCallsData: BeamCall[] = [
     date: "TBD",
     summary:
       "Exploration of the Attester-Proposer Separation (APS) concept, its benefits, and potential applications for the Beam Chain.",
-    thumbnail: "/placeholder.svg?height=180&width=320",
+    thumbnail: null,
     youtubeUrl: "#",
   },
   {
@@ -115,7 +115,7 @@ export const beamCallsData: BeamCall[] = [
     date: "TBD",
     summary:
       "Introduction to Rainbow Staking, a novel staking mechanism designed to enhance network security and decentralization.",
-    thumbnail: "/placeholder.svg?height=180&width=320",
+    thumbnail: null,
     youtubeUrl: "#",
   },
   {
@@ -125,7 +125,7 @@ export const beamCallsData: BeamCall[] = [
     date: "TBD",
     summary:
       "In-depth discussion on the Post-Quantum (PQ) sub-specification, focusing on its cryptographic aspects and integration into the Beam Chain.",
-    thumbnail: "/placeholder.svg?height=180&width=320",
+    thumbnail: null,
     youtubeUrl: "#",
   },
   {
@@ -135,7 +135,7 @@ export const beamCallsData: BeamCall[] = [
     date: "TBD",
     summary:
       "Examination of the Peer-to-Peer (P2P) sub-specification, covering its role in facilitating decentralized communication within the Beam Chain.",
-    thumbnail: "/placeholder.svg?height=180&width=320",
+    thumbnail: null,
     youtubeUrl: "#",
   },
   {
@@ -145,7 +145,7 @@ export const beamCallsData: BeamCall[] = [
     date: "TBD",
     summary:
       "Delving into the 3SF sub-specification, including its technical details and implications for the network's finality.",
-    thumbnail: "/placeholder.svg?height=180&width=320",
+    thumbnail: null,
     youtubeUrl: "#",
   },
   {
@@ -155,7 +155,7 @@ export const beamCallsData: BeamCall[] = [
     date: "TBD",
     summary:
       "Exploring the Attester-Proposer Separation (APS) sub-specification, its benefits, and potential applications in the Beam Chain.",
-    thumbnail: "/placeholder.svg?height=180&width=320",
+    thumbnail: null,
     youtubeUrl: "#",
   },
   {
@@ -165,7 +165,7 @@ export const beamCallsData: BeamCall[] = [
     date: "TBD",
     summary:
       "First part of the Beam specification discussion, covering the overall architecture and core components of the Beam Chain.",
-    thumbnail: "/placeholder.svg?height=180&width=320",
+    thumbnail: null,
     youtubeUrl: "#",
   },
   {
@@ -175,7 +175,7 @@ export const beamCallsData: BeamCall[] = [
     date: "TBD",
     summary:
       "Second part of the Beam specification discussion, focusing on the protocol's advanced features, security considerations, and future development plans.",
-    thumbnail: "/placeholder.svg?height=180&width=320",
+    thumbnail: null,
     youtubeUrl: "#",
   },
 ]

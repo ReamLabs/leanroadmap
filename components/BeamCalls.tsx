@@ -48,7 +48,7 @@ export function BeamCalls() {
             ) : (
               <>
                 <Image
-                  src={call.thumbnail || "/placeholder.svg"}
+                  src={call.thumbnail || "/placeholder.svg?height=180&width=320"}
                   alt={call.title}
                   width={320}
                   height={180}
