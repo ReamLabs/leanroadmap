@@ -120,7 +120,7 @@ export const beamCallsData: BeamCall[] = [
       },
       {
         title: "Grid Topology",
-        url: "https://docs.google.com/presentation/d/1WabvJmFRVSIdVDGuERyo66EfExKb_9gIrCEqHF49U14",
+        url: "https://hackmd.io/@kamilsa/rJ7SjSZaye#/",
         type: "slides"
       },
       {
