@@ -81,12 +81,64 @@ export const beamCallsData: BeamCall[] = [
   {
     id: "call-3",
     title: "Beam Call #3: P2P Networking",
-    status: "upcoming",
+    status: "completed",
     date: "April 4, 2025",
     summary:
       "Discussion on the latest developments in peer-to-peer networking.",
     thumbnail: "/placeholder.svg?height=180&width=320",
-    youtubeUrl: "#",
+    youtubeUrl: "https://www.youtube.com/watch?v=dJkuwuh2Nrs",
+    resources: [
+      {
+        title: "Meeting agenda",
+        url: "https://github.com/ethereum/pm/issues/1389",
+        type: "agenda"
+      },
+      {
+        title: "Social Layer Updates",
+        url: "https://docs.google.com/presentation/d/1yavZUvmfnTYzsOuY086AaJgtTMEayANfNBVnmxL1_Kg",
+        type: "slides"
+      },
+      {
+        title: "Hash-based SNARKs w/ Small Proofs",
+        url: "https://docs.google.com/presentation/d/10pRsghxatnjju_8oKAmrhas1t5P_jtiTxUme3w1U7CY",
+        type: "slides"
+      },
+      {
+        title: "Permissionless Aggregation",
+        url: "https://docs.google.com/presentation/d/11z8uO3rTHO2dxsNmRqWFqgJgMtRQAzYUq2nNT0UAPdY",
+        type: "slides"
+      },
+      {
+        title: "Generalized Gossipsub",
+        url: "https://docs.google.com/presentation/d/1AtsSryG_xiiuhUBRbHjSWAu4YlBPq1x-lulyLhDnYVc",
+        type: "slides"
+      },
+      {
+        title: "Gossipsub V2",
+        url: "https://docs.google.com/presentation/d/1jDC5pV710PEz_-Flgdt4zGeo8zlzdAszWXaxjprRPiw",
+        type: "slides"
+      },
+      {
+        title: "Grid Topology",
+        url: "https://docs.google.com/presentation/d/1WabvJmFRVSIdVDGuERyo66EfExKb_9gIrCEqHF49U14",
+        type: "slides"
+      },
+      {
+        title: "Set Reconciliation",
+        url: "https://docs.google.com/presentation/d/1zqBpF-o7qFFuYUPESgK0jIYvVbiD2dlu9X2dpaS1ySQ",
+        type: "slides"
+      },
+      {
+        title: "libp2p in C",
+        url: "https://docs.google.com/presentation/d/1nDm8wk2psmRIYbh0cb5ye11KmABu-D-kmVv3VuIdZoY",
+        type: "slides"
+      },
+      {
+        title: "libp2p in Zig",
+        url: "https://docs.google.com/presentation/d/1WU0X-7sAKIoNy3gwA32PTtv5X6biRlLwXwsbVBXDUkQ",
+        type: "slides"
+      }
+    ]
   },
   {
     id: "call-4",
