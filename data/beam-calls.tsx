@@ -180,17 +180,17 @@ export const beamCallsData: BeamCall[] = [
   {
     id: "call-6",
     title: "Beam Call #6: 3SF (Finality)",
-    status: "unscheduled",
+    status: "upcoming",
     date: "May 16, 2025",
     summary:
       "Discussion on the finality of the 3SF protocol, including its implementation and implications on the network.",
     thumbnail: null,
-    youtubeUrl: "#"
+    youtubeUrl: "#",
   },
   {
     id: "call-7",
     title: "Beam Call #7: Rainbow Staking",
-    status: "unscheduled",
+    status: "upcoming",
     date: "May 30, 2025",
     summary:
       "Introduction to Rainbow Staking, a novel staking mechanism designed to enhance network security and decentralization.",
@@ -205,7 +205,7 @@ export const beamCallsData: BeamCall[] = [
     summary:
       "In-depth discussion on the Post-Quantum (PQ) sub-specification, focusing on its cryptographic aspects and integration into the Beam Chain.",
     thumbnail: null,
-    youtubeUrl: "#"
+    youtubeUrl: "#",
   },
   {
     id: "call-9",
@@ -215,7 +215,7 @@ export const beamCallsData: BeamCall[] = [
     summary:
       "Examination of the Peer-to-Peer (P2P) sub-specification, covering its role in facilitating decentralized communication within the Beam Chain.",
     thumbnail: null,
-    youtubeUrl: "#"
+    youtubeUrl: "#",
   },
   {
     id: "call-10",
@@ -225,7 +225,7 @@ export const beamCallsData: BeamCall[] = [
     summary:
       "Exploring the Attester-Proposer Separation (APS) sub-specification, its benefits, and potential applications in the Beam Chain.",
     thumbnail: null,
-    youtubeUrl: "#"
+    youtubeUrl: "#",
   },
   {
     id: "call-11",
@@ -245,16 +245,16 @@ export const beamCallsData: BeamCall[] = [
     summary:
       "First part of the Beam specification discussion, covering the overall architecture and core components of the Beam Chain.",
     thumbnail: null,
-    youtubeUrl: "#"
+    youtubeUrl: "#",
   },
   {
     id: "call-13",
     title: "Beam Call #13: Beam Spec (Part 2)",
-    status: "unscheduled",
+    status: "upcoming",
     date: "December 26, 2025",
     summary:
       "Second part of the Beam specification discussion, focusing on the protocol's advanced features, security considerations, and future development plans.",
     thumbnail: null,
-    youtubeUrl: "#"
+    youtubeUrl: "#",
   },
 ]
