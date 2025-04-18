@@ -257,4 +257,4 @@ export const beamCallsData: BeamCall[] = [
     thumbnail: null,
     youtubeUrl: "#"
   },
-];
+]
