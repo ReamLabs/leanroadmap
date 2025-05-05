@@ -12,7 +12,7 @@ Run locally with `npm run dev`.
 
 ## Contributing
 
-Most data resides as standalone data structures in the [./lib/](./lib/) folder. Feel free to make changes to the file(s) and submit a pull request.
+Most data resides as standalone data structures in the [./data/](./data/) folder. Feel free to make changes to the file(s) and submit a pull request.
 
 ## Team
 
