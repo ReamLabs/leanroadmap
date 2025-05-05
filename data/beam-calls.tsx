@@ -170,12 +170,24 @@ export const beamCallsData: BeamCall[] = [
   {
     id: "call-5",
     title: "Beam Call #5: APS (Attester-Proposer Separation)",
-    status: "upcoming",
+    status: "completed",
     date: "May 2, 2025",
     summary:
       "Exploration of the Attester-Proposer Separation (APS) concept, its benefits, and potential applications for the Beam Chain.",
     thumbnail: null,
-    youtubeUrl: "#",
+    youtubeUrl: "https://youtu.be/5OOzMqCOoKM",
+    resources: [
+      {
+        title: "Meeting agenda",
+        url: "https://github.com/ethereum/pm/issues/1447",
+        type: "agenda"
+      },
+      {
+        title: "Attester-Proposer Separation Presentation Slides",
+        url: "https://docs.google.com/presentation/d/11udzhHKbmEGKla0kNPnQ0IPLcgX7dFcvTc0sdGTAyXk",
+        type: "slides"
+      }
+    ],
   },
   {
     id: "call-6",
@@ -186,6 +198,13 @@ export const beamCallsData: BeamCall[] = [
       "Discussion on the finality of the 3SF protocol, including its implementation and implications on the network.",
     thumbnail: null,
     youtubeUrl: "#",
+    resources: [
+      {
+        title: "Meeting agenda",
+        url: "https://github.com/ethereum/pm/issues/1448",
+        type: "agenda"
+      },
+    ],
   },
   {
     id: "call-7",
