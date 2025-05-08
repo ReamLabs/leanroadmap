@@ -116,6 +116,7 @@ export const researchTracksData: ResearchTrack[] = [
     resources: [
       { title: "Falcon Signatures Website", url: "https://falcon-sign.info/", type: "website" },
       { title: "Some existing work on Falcon-based multi-signatures", url: "https://eprint.iacr.org/2024/311", type: "paper"},
+      { title: "Benchmarks for LaBRADOR aggregation of Falcon signatures", url: "https://ethresear.ch/t/lattice-based-signature-aggregation/22282", type: "code"},
     ],
   },
   {
