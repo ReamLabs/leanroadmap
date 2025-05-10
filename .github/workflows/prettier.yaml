@@ -1,0 +1,23 @@
+name: Check Formatting
+
+on: [pull_request]
+
+jobs:
+  prettier:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - run: npm ci
+
+      - name: Run Prettier check
+        run: npx prettier --check .
