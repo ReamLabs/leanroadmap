@@ -1,8 +1,8 @@
-"use client"
+'use client';
 
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/primitives"
-import { Check, Rocket } from "lucide-react"
-import { keyResourcesData } from "@/data/key-resources"
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/primitives';
+import { Check, Rocket } from 'lucide-react';
+import { keyResourcesData } from '@/data/key-resources';
 
 export function BeamChainConcepts() {
   return (
@@ -16,7 +16,9 @@ export function BeamChainConcepts() {
           <ul className="space-y-2 p-0 md:pl-5 text-sm list-none">
             <li className="flex items-start">
               <Rocket className="h-4 w-4 mr-2 text-slate-500 mt-0.5 flex-shrink-0" />
-              <span>Complete the roadmap in 4-5 years so Ethereum can go into maintenance mode</span>
+              <span>
+                Complete the roadmap in 4-5 years so Ethereum can go into maintenance mode
+              </span>
             </li>
             <li className="flex items-start">
               <Rocket className="h-4 w-4 mr-2 text-slate-500 mt-0.5 flex-shrink-0" />
@@ -24,7 +26,10 @@ export function BeamChainConcepts() {
             </li>
             <li className="flex items-start">
               <Rocket className="h-4 w-4 mr-2 text-slate-500 mt-0.5 flex-shrink-0" />
-              <span>Renaissance of solo validating through "Zen Staking," "Fish Staking," and "Fiverr Staking"</span>
+              <span>
+                Renaissance of solo validating through "Zen Staking," "Fish Staking," and "Fiverr
+                Staking"
+              </span>
             </li>
             <li className="flex items-start">
               <Rocket className="h-4 w-4 mr-2 text-slate-500 mt-0.5 flex-shrink-0" />
@@ -43,7 +48,9 @@ export function BeamChainConcepts() {
           <ul className="space-y-2 p-0 md:pl-5 text-sm list-none">
             <li className="flex items-start">
               <Check className="h-4 w-4 mr-2 text-slate-500 mt-0.5 flex-shrink-0" />
-              <span>Small incremental upgrades are only applicable to certain types of changes</span>
+              <span>
+                Small incremental upgrades are only applicable to certain types of changes
+              </span>
             </li>
             <li className="flex items-start">
               <Check className="h-4 w-4 mr-2 text-slate-500 mt-0.5 flex-shrink-0" />
@@ -67,7 +74,9 @@ export function BeamChainConcepts() {
             {keyResourcesData.map((resource, index) => (
               <li key={index} className="flex items-start">
                 <resource.icon className="h-4 w-4 mr-2 text-slate-500 mt-0.5 flex-shrink-0" />
-                <a href={resource.url} className="text-blue-600 hover:underline">{resource.title}</a> 
+                <a href={resource.url} className="text-blue-600 hover:underline">
+                  {resource.title}
+                </a>
                 <span className="text-gray-500 pl-1">({resource.date})</span>
               </li>
             ))}
@@ -75,5 +84,5 @@ export function BeamChainConcepts() {
         </CardContent>
       </Card>
     </div>
-  )
-} 
+  );
+}

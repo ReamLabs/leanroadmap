@@ -1,41 +1,39 @@
-"use client"
+'use client';
 
-import { useState } from "react"
-import { Search, ChevronUp, ChevronDown } from "lucide-react"
-import { Input } from "@/components/ui/primitives"
-import { ResearchTrackCard } from "@/components/ResearchTrackCard"
-import { researchTracksData } from "@/data/research-tracks"
+import { useState } from 'react';
+import { Search, ChevronUp, ChevronDown } from 'lucide-react';
+import { Input } from '@/components/ui/primitives';
+import { ResearchTrackCard } from '@/components/ResearchTrackCard';
+import { researchTracksData } from '@/data/research-tracks';
 
 export function ResearchTracks() {
-  const [searchTerm, setSearchTerm] = useState("")
-  const [selectedTags, setSelectedTags] = useState<string[]>([])
-  const [allExpanded, setAllExpanded] = useState(true) // Start with all expanded
+  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedTags, setSelectedTags] = useState<string[]>([]);
+  const [allExpanded, setAllExpanded] = useState(true); // Start with all expanded
 
   // Get unique tags from all research tracks
-  const allTags = Array.from(new Set(researchTracksData.flatMap(track => track.tags))).sort()
+  const allTags = Array.from(new Set(researchTracksData.flatMap((track) => track.tags))).sort();
 
   const filteredTracks = researchTracksData.filter(
     (track) =>
-      (searchTerm === "" || 
-       track.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-       track.description.toLowerCase().includes(searchTerm.toLowerCase())) &&
-      (selectedTags.length === 0 || selectedTags.some(tag => track.tags.includes(tag)))
-  )
+      (searchTerm === '' ||
+        track.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        track.description.toLowerCase().includes(searchTerm.toLowerCase())) &&
+      (selectedTags.length === 0 || selectedTags.some((tag) => track.tags.includes(tag))),
+  );
 
   const toggleTag = (tag: string) => {
-    setSelectedTags(prev => 
-      prev.includes(tag) 
-        ? prev.filter(t => t !== tag)
-        : [...prev, tag]
-    )
-  }
+    setSelectedTags((prev) =>
+      prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag],
+    );
+  };
 
   const clearAllFilters = () => {
-    setSearchTerm("")
-    setSelectedTags([])
-  }
+    setSearchTerm('');
+    setSelectedTags([]);
+  };
 
-  const hasActiveFilters = searchTerm !== "" || selectedTags.length > 0
+  const hasActiveFilters = searchTerm !== '' || selectedTags.length > 0;
 
   return (
     <>
@@ -73,7 +71,7 @@ export function ResearchTracks() {
 
       <div className="flex flex-wrap items-center gap-2 mb-6">
         <div className="flex flex-wrap gap-2 flex-1">
-          {allTags.map(tag => (
+          {allTags.map((tag) => (
             <button
               key={tag}
               onClick={() => toggleTag(tag)}
@@ -101,9 +99,9 @@ export function ResearchTracks() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredTracks.length > 0 ? (
           filteredTracks.map((track) => (
-            <ResearchTrackCard 
-              key={track.id} 
-              track={track} 
+            <ResearchTrackCard
+              key={track.id}
+              track={track}
               isExpanded={allExpanded}
               onToggle={(expanded) => {
                 // If a card is manually expanded while all others are collapsed,
@@ -119,5 +117,5 @@ export function ResearchTracks() {
         )}
       </div>
     </>
-  )
-} 
+  );
+}
