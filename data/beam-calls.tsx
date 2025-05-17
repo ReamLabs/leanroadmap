@@ -196,12 +196,17 @@ export const beamCallsData: BeamCall[] = [
     summary:
       'Discussion on the finality of the 3SF protocol, including its implementation and implications on the network.',
     thumbnail: null,
-    youtubeUrl: '#',
+    youtubeUrl: 'https://youtu.be/Eft4K0lGdBo',
     resources: [
       {
         title: 'Meeting agenda',
         url: 'https://github.com/ethereum/pm/issues/1448',
         type: 'agenda',
+      },
+      {
+        title: '3SF Finality Protocol Updates',
+        url: 'https://docs.google.com/presentation/d/1vAIDvB8qwQWgMHEjne73VFiPo8Vq9-7KRb6ni_mU8ag/edit',
+        type: 'slides',
       },
     ],
   },
