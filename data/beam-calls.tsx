@@ -16,12 +16,12 @@ export interface BeamCall {
 
 export function determineBeamCallStatus(date: string): BeamCallStatus {
   if (date === 'TBD') return 'unscheduled';
-  
+
   const callDate = new Date(date);
   const today = new Date();
   const oneMonthFromNow = new Date();
   oneMonthFromNow.setMonth(today.getMonth() + 1);
-  
+
   if (callDate < today) return 'completed';
   if (callDate <= oneMonthFromNow) return 'upcoming';
   return 'scheduled';

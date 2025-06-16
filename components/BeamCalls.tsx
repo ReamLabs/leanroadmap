@@ -95,10 +95,8 @@ function BeamCallCard({ call }: { call: BeamCall }) {
         ) : (
           <div className="flex items-center">
             <p className="font-semibold text-lg mb-1 text-slate-900">{call.title}</p>
-            {(status === 'upcoming' || status === 'completed') && (
-              <span className="ml-2 text-xs bg-red-500 text-white rounded-md px-2 py-1">
-                Soon!
-              </span>
+            {status === 'upcoming' && (
+              <span className="ml-2 text-xs bg-red-500 text-white rounded-md px-2 py-1">Soon!</span>
             )}
           </div>
         )}
