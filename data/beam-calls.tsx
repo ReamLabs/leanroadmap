@@ -3,7 +3,6 @@ export type BeamCallStatus = 'completed' | 'upcoming' | 'scheduled' | 'unschedul
 export interface BeamCall {
   id: string;
   title: string;
-  // status: BeamCallStatus;
   date: string;
   summary: string;
   thumbnail: string | null;
