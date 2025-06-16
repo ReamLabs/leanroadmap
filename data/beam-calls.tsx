@@ -221,7 +221,7 @@ export const beamCallsData: BeamCall[] = [
   {
     id: 'call-7',
     title: 'Beam Call #7: Rainbow Staking',
-    date: 'May 30, 2025',
+    date: 'TBD',
     summary:
       'Introduction to Rainbow Staking, a novel staking mechanism designed to enhance network security and decentralization.',
     thumbnail: null,
