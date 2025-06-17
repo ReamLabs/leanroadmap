@@ -70,7 +70,7 @@ export const researchTracksData: ResearchTrack[] = [
       'Develop and analyze hash-based multi-signatures using Winternitz XMSS as a post-quantum replacement for BLS signatures.',
     icon: <FileCheck className="h-5 w-5" />,
     colorClass: 'green',
-    progress: 10,
+    progress: 70,
     lead: 'Benedikt Wagner',
     leadLink: 'https://benedikt-wagner.dev/',
     tags: ['Post-Quantum Signatures'],
@@ -87,10 +87,14 @@ export const researchTracksData: ResearchTrack[] = [
       },
       {
         title: 'Exploring further optimizations for hash-based signature candidates',
-        completed: false,
+        completed: true,
       },
       {
         title: 'Identification of alternatives for post-quantum multi-signatures',
+        completed: true,
+      },
+      {
+        title: 'Fixing parameters such as key lifetime',
         completed: false,
       },
     ],
