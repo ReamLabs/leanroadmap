@@ -129,7 +129,7 @@ export const researchTracksData: ResearchTrack[] = [
         type: 'paper',
       },
       {
-        title: 'Follow-up research on Hash-Based Multi-Signatures',
+        title: 'Follow-up research on Hash-Based Multi-Signatures (Top of the hypercube)',
         url: 'https://eprint.iacr.org/2025/889.pdf',
         type: 'paper',
       },
@@ -142,11 +142,6 @@ export const researchTracksData: ResearchTrack[] = [
         title: 'Reference implementation in Rust',
         url: 'https://github.com/b-wagn/hash-sig',
         type: 'code',
-      },
-      {
-        title: 'At the Top of the Hypercube – Better Size-Time Tradeoffs for Hash-Based Signatures',
-        url: 'https://eprint.iacr.org/2025/889',
-        type: 'paper',
       },
     ],
   },
