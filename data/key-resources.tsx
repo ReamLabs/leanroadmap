@@ -29,7 +29,7 @@ export const keyResourcesData: KeyResource[] = [
   {
     icon: Youtube,
     title: 'Beam chain tldr at Devcon SEA Community-Led Session',
-    url: 'https://www.youtube.com/watch?v=63w7kHh737w',
+    url: 'https://youtu.be/o8n-MCAnxso?si=OQiZl3vrT9ktdzgi&t=2854',
     date: 'Nov 2024',
   },
   {
