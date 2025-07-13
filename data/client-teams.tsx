@@ -167,6 +167,19 @@ export const clientTeamsData: ClientTeam[] = [
     ],
   },
   {
+    id: 'paro',
+    name: 'Paro',
+    description:
+      'The Turkish blockchain development team with 3 experienced developers specializing in Beam Chain infrastructure, building CL clients using Rust, C++.',
+    status: 'new',
+    links: [
+      { type: 'website', url: 'https://ltscoin.org/' },
+      { type: 'twitter', url: 'https://x.com/pamenarti' },
+      { type: 'github', url: 'https://github.com/Pamenarti' },
+      { type: 'medium', url: 'https://medium.com/@pamenarti' },
+    ],
+  },
+  {
     id: 'nimbus',
     name: 'Nimbus',
     description:
