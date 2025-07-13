@@ -1,14 +1,15 @@
 import {
+  Badge,
   Card,
-  CardHeader,
-  CardTitle,
   CardContent,
   CardFooter,
-  Badge,
+  CardHeader,
+  CardTitle,
 } from '@/components/ui/primitives';
-import Link from 'next/link';
-import { ExternalLink, Twitter, Github, FileText } from 'lucide-react';
 import { ClientTeam, clientTeamsData } from '@/data/client-teams';
+import { ExternalLink, FileText, Github, Twitter } from 'lucide-react';
+
+import Link from 'next/link';
 import { useState } from 'react';
 
 export function ClientTeams() {
@@ -132,6 +133,17 @@ export function ClientTeams() {
                   >
                     <FileText className="h-4 w-4 shrink-0" />
                     HackMD
+                  </Link>
+                )}
+                {/* Medium Link */}
+                {getLinkUrl(team.links, 'medium') && (
+                  <Link
+                    href={getLinkUrl(team.links, 'medium') || '#'}
+                    target="_blank"
+                    className="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-slate-700 bg-slate-100 rounded-full hover:bg-slate-200"
+                  >
+                    <FileText className="h-4 w-4 shrink-0" />
+                    Medium
                   </Link>
                 )}
               </div>
