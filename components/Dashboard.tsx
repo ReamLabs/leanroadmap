@@ -2,11 +2,11 @@
 
 import { Badge } from '@/components/ui/primitives';
 import { ClientTeams } from '@/components/ClientTeams';
-import { BeamCalls } from '@/components/BeamCalls';
+import { LeanCalls } from '@/components/LeanCalls';
 import { Timeline } from '@/components/Timeline';
 import { Footer } from '@/components/Footer';
 import { ResearchTracks } from '@/components/ResearchTracks';
-import { BeamChainConcepts } from '@/components/BeamChainConcepts';
+import { LeanConsensusConcepts } from '@/components/LeanConsensusConcepts';
 
 export function Dashboard() {
   return (
@@ -14,15 +14,14 @@ export function Dashboard() {
       <header className="flex flex-col md:flex-row justify-between md:items-center gap-4 my-4">
         <div>
           <h1 className="text-3xl font-bold tracking-tight">
-            Beam Chain* R&D Progress{' '}
-            <span className="text-sm font-normal text-slate-400">* new name soon!</span>
+            Lean Consensus R&D Progress{' '}
           </h1>
 
           <p className="text-slate-600 mt-1">
-            Track Beam Chain research progress across all workstreams
+            Track Lean Consensus research progress across all workstreams
           </p>
         </div>
-        <Badge variant="outline">Last updated: May 2025</Badge>
+        <Badge variant="outline">Last updated: July 2025</Badge>
       </header>
 
       <section>
@@ -31,8 +30,8 @@ export function Dashboard() {
       </section>
 
       <section>
-        <h2>Beam Chain Concepts</h2>
-        <BeamChainConcepts />
+        <h2>Lean Consensus Concepts</h2>
+        <LeanConsensusConcepts />
       </section>
 
       <section>
@@ -45,8 +44,8 @@ export function Dashboard() {
       </section>
 
       <section>
-        <h2>Beam Calls</h2>
-        <BeamCalls />
+        <h2>Lean Calls</h2>
+        <LeanCalls />
       </section>
 
       <Footer />

@@ -272,7 +272,7 @@ export const researchTracksData: ResearchTrack[] = [
     title: 'P2P Networking',
     description:
       "Modernizes how Ethereum consensus nodes communicate by developing next-generation \
-      networking protocols like Gossipsub v2.0 and advanced set reconciliation to enable Beam Chain's \
+      networking protocols like Gossipsub v2.0 and advanced set reconciliation to enable Lean Consensus's \
       4-second block times and increased validators from reduced staking requirements (32 ETH to 1 ETH), \
       and while uncompromising on decentralization.",
     icon: <Waypoints className="h-5 w-5" />,

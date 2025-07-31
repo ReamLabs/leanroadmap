@@ -4,7 +4,7 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/primit
 import { Check, Rocket } from 'lucide-react';
 import { keyResourcesData } from '@/data/key-resources';
 
-export function BeamChainConcepts() {
+export function LeanConsensusConcepts() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
       {/* Long-term Vision Card */}

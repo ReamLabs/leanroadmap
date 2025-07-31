@@ -9,7 +9,7 @@ export function Footer() {
       </a>{' '}
       | Contribute on{' '}
       <a
-        href="https://github.com/ReamLabs/beamroadmap"
+        href="https://github.com/ReamLabs/leanroadmap"
         className="text-slate-600 hover:text-slate-900"
       >
         GitHub

@@ -1,12 +1,10 @@
-# Beam Roadmap
+# Lean Roadmap
 
-Track Beam Chain research progress across all workstreams.
-
-The name "Beam Chain" is subject to change in the near future. The project's name will be updated accordingly once a new name is decided & announced.
+Track Lean Consensus research progress across all workstreams.
 
 ## Usage
 
-Check out the deployed website at [https://beamroadmap.org](https://beamroadmap.org).
+Check out the deployed website at [https://leanroadmap.org](https://leanroadmap.org).
 
 Run locally with `npm run dev`.
 

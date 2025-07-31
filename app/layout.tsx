@@ -4,8 +4,8 @@ import './globals.css';
 import AnimatedBackground from '@/components/ui/AnimatedBackground';
 
 export const metadata: Metadata = {
-  title: 'Beam Chain Roadmap',
-  description: 'Track research progress across all Beam Chain workstreams',
+  title: 'Lean Ethereum Roadmap',
+  description: 'Track research progress across all Lean Ethereum workstreams',
 };
 
 export default function RootLayout({
@@ -20,8 +20,8 @@ export default function RootLayout({
         {children}
         <script
           defer
-          data-domain="beamroadmap.org"
-          src="https://analytics.beamroadmap.org/js/script.outbound-links.tagged-events.js"
+          data-domain="leanroadmap.org"
+          src="https://analytics.leanroadmap.org/js/script.outbound-links.tagged-events.js"
         ></script>
       </body>
     </html>

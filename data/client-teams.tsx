@@ -16,7 +16,7 @@ export const clientTeamsData: ClientTeam[] = [
     id: 'ream',
     name: 'Ream',
     description:
-      'The high-performance Beam consensus client written in Rust, focusing on delivering the most performant and user-friendly Beam Chain client.',
+      'The high-performance Lean Consensus client written in Rust, focusing on delivering the most performant and user-friendly Lean Consensus client.',
     status: 'new',
     links: [
       { type: 'twitter', url: 'https://twitter.com/reamlabs' },
@@ -55,7 +55,7 @@ export const clientTeamsData: ClientTeam[] = [
     id: 'lambdaclass',
     name: 'LambdaClass',
     description:
-      'The team with experience in ZK development across multiple projects, currently working on both an Elixir consensus client and considering Rust or their own language called Concrete for their Beam client.',
+      'The team with experience in ZK development across multiple projects, currently working on both an Elixir consensus client and considering Rust or their own language called Concrete for their Lean Consensus client.',
     status: 'new',
     links: [
       { type: 'website', url: 'https://lambdaclass.com' },
@@ -78,7 +78,7 @@ export const clientTeamsData: ClientTeam[] = [
     id: 'afream',
     name: 'Afream',
     description:
-      'The African-led Beam consensus client initiative focusing on regional blockchain adoption.',
+      'The African-led Lean Consensus client initiative focusing on regional blockchain adoption.',
     status: 'new',
     links: [],
   },

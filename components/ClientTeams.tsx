@@ -37,7 +37,7 @@ export function ClientTeams() {
         {clientTeamsData.length} client teams (
         {clientTeamsData.filter((team) => team.status === 'new').length} new +{' '}
         {clientTeamsData.filter((team) => team.status === 'existing').length} existing) are
-        committed to building the Beam Chain.
+        committed to building Lean Consensus.
       </p>
 
       <div className="flex flex-wrap gap-2 mt-0">

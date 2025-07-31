@@ -1,6 +1,6 @@
-export type BeamCallStatus = 'completed' | 'upcoming' | 'scheduled' | 'unscheduled';
+export type LeanCallStatus = 'completed' | 'upcoming' | 'scheduled' | 'unscheduled';
 
-export interface BeamCall {
+export interface LeanCall {
   id: string;
   title: string;
   date: string;
@@ -14,7 +14,7 @@ export interface BeamCall {
   }[];
 }
 
-export function determineBeamCallStatus(date: string): BeamCallStatus {
+export function determineLeanCallStatus(date: string): LeanCallStatus {
   if (date === 'TBD') return 'unscheduled';
 
   const callDate = new Date(date);
@@ -27,7 +27,7 @@ export function determineBeamCallStatus(date: string): BeamCallStatus {
   return 'scheduled';
 }
 
-export const beamCallsData: BeamCall[] = [
+export const leanCallsData: LeanCall[] = [
   {
     id: 'call-1',
     title: 'Beam Call #1: Social Layer Updates',
@@ -181,7 +181,7 @@ export const beamCallsData: BeamCall[] = [
     title: 'Beam Call #5: APS (Attester-Proposer Separation)',
     date: 'May 2, 2025',
     summary:
-      'Exploration of the Attester-Proposer Separation (APS) concept, its benefits, and potential applications for the Beam Chain.',
+      'Exploration of the Attester-Proposer Separation (APS) concept, its benefits, and potential applications for Lean Consensus.',
     thumbnail: null,
     youtubeUrl: 'https://youtu.be/5OOzMqCOoKM',
     resources: [
@@ -220,7 +220,7 @@ export const beamCallsData: BeamCall[] = [
   },
   {
     id: 'call-7',
-    title: 'Beam Call #7: Rainbow Staking',
+    title: 'Lean Call #7: Rainbow Staking',
     date: 'TBD',
     summary:
       'Introduction to Rainbow Staking, a novel staking mechanism designed to enhance network security and decentralization.',
@@ -229,34 +229,34 @@ export const beamCallsData: BeamCall[] = [
   },
   {
     id: 'call-8',
-    title: 'Beam Call #8: PQ Sub-Spec',
+    title: 'Lean Call #8: PQ Sub-Spec',
     date: 'TBD',
     summary:
-      'In-depth discussion on the Post-Quantum (PQ) sub-specification, focusing on its cryptographic aspects and integration into the Beam Chain.',
+      'In-depth discussion on the Post-Quantum (PQ) sub-specification, focusing on its cryptographic aspects and integration into Lean Consensus.',
     thumbnail: null,
     youtubeUrl: '#',
   },
   {
     id: 'call-9',
-    title: 'Beam Call #9: P2P Sub-Spec',
+    title: 'Lean Call #9: P2P Sub-Spec',
     date: 'TBD',
     summary:
-      'Examination of the Peer-to-Peer (P2P) sub-specification, covering its role in facilitating decentralized communication within the Beam Chain.',
+      'Examination of the Peer-to-Peer (P2P) sub-specification, covering its role in facilitating decentralized communication within Lean Consensus.',
     thumbnail: null,
     youtubeUrl: '#',
   },
   {
     id: 'call-10',
-    title: 'Beam Call #10: APS Sub-Spec',
+    title: 'Lean Call #10: APS Sub-Spec',
     date: 'TBD',
     summary:
-      'Exploring the Attester-Proposer Separation (APS) sub-specification, its benefits, and potential applications in the Beam Chain.',
+      'Exploring the Attester-Proposer Separation (APS) sub-specification, its benefits, and potential applications in Lean Consensus.',
     thumbnail: null,
     youtubeUrl: '#',
   },
   {
     id: 'call-11',
-    title: 'Beam Call #11: 3SF Sub-Spec',
+    title: 'Lean Call #11: 3SF Sub-Spec',
     date: 'TBD',
     summary:
       "Delving into the 3SF sub-specification, including its technical details and implications for the network's finality.",
@@ -265,19 +265,19 @@ export const beamCallsData: BeamCall[] = [
   },
   {
     id: 'call-12',
-    title: 'Beam Call #12: Beam Spec (Part 1)',
+    title: 'Lean Call #12: Lean Consensus Spec (Part 1)',
     date: 'TBD',
     summary:
-      'First part of the Beam specification discussion, covering the overall architecture and core components of the Beam Chain.',
+      'First part of the Lean Consensus specification discussion, covering the overall architecture and core components of Lean Consensus.',
     thumbnail: null,
     youtubeUrl: '#',
   },
   {
     id: 'call-13',
-    title: 'Beam Call #13: Beam Spec (Part 2)',
+    title: 'Lean Call #13: Lean Consensus Spec (Part 2)',
     date: 'December 26, 2025',
     summary:
-      "Second part of the Beam specification discussion, focusing on the protocol's advanced features, security considerations, and future development plans.",
+      "Second part of the Lean Consensus specification discussion, focusing on the protocol's advanced features, security considerations, and future development plans.",
     thumbnail: null,
     youtubeUrl: '#',
   },

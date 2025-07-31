@@ -3,7 +3,7 @@ import { ExternalLink, FileText, ListChecks, Play, Presentation } from 'lucide-r
 import { Card, CardContent, CardFooter } from '@/components/ui/primitives';
 import { Button } from '@/components/ui/Button';
 import Link from 'next/link';
-import { BeamCall, beamCallsData, determineBeamCallStatus } from '@/data/beam-calls';
+import { LeanCall, leanCallsData, determineLeanCallStatus } from '@/data/lean-calls';
 
 // Helper function to extract YouTube video ID from URL
 function getYoutubeVideoId(url: string): string | null {
@@ -29,18 +29,18 @@ function getResourceIcon(type: string) {
   }
 }
 
-export function BeamCalls() {
+export function LeanCalls() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {beamCallsData.map((call) => (
-        <BeamCallCard key={call.id} call={call} />
+      {leanCallsData.map((call) => (
+        <LeanCallCard key={call.id} call={call} />
       ))}
     </div>
   );
 }
 
-function BeamCallCard({ call }: { call: BeamCall }) {
-  const status = determineBeamCallStatus(call.date);
+function LeanCallCard({ call }: { call: LeanCall }) {
+  const status = determineLeanCallStatus(call.date);
 
   return (
     <Card
