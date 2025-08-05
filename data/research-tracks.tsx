@@ -7,6 +7,7 @@ export interface ResearchTrack {
   description: string;
   icon: ReactNode;
   colorClass: string;
+  status: 'active' | 'inactive';
   progress: number;
   lead: string;
   leadLink: string;
@@ -37,6 +38,7 @@ export const researchTracksData: ResearchTrack[] = [
       and advanced hardware testing.',
     icon: <Lock className="h-5 w-5" />,
     colorClass: 'blue',
+    status: 'active',
     progress: 10,
     lead: 'Dmitry Khovratovich',
     leadLink: 'https://x.com/Khovr',
@@ -94,6 +96,7 @@ export const researchTracksData: ResearchTrack[] = [
       replacement for BLS signatures.',
     icon: <FileCheck className="h-5 w-5" />,
     colorClass: 'green',
+    status: 'active',
     progress: 70,
     lead: 'Benedikt Wagner',
     leadLink: 'https://benedikt-wagner.dev/',
@@ -153,6 +156,7 @@ export const researchTracksData: ResearchTrack[] = [
       signature aggregation, including various options like Binus M3, SP1, KRU, STU, Jolt, and OpenVM.',
     icon: <Cpu className="h-5 w-5" />,
     colorClass: 'amber',
+    status: 'active',
     progress: 10,
     lead: 'Thomas Coratger',
     leadLink: 'https://x.com/tcoratger',
@@ -197,6 +201,7 @@ export const researchTracksData: ResearchTrack[] = [
       more validators.',
     icon: <Feather className="h-5 w-5" />,
     colorClass: 'red',
+    status: 'inactive',
     progress: 10,
     lead: 'Josh Beal',
     leadLink: 'https://x.com/TheBealDeal',
@@ -228,6 +233,7 @@ export const researchTracksData: ResearchTrack[] = [
       that the zkEVM implementations are correct.',
     icon: <FileCode className="h-5 w-5" />,
     colorClass: 'indigo',
+    status: 'active',
     progress: 10,
     lead: 'Alex Hicks',
     leadLink: 'https://x.com/alexanderlhicks',
@@ -272,6 +278,7 @@ export const researchTracksData: ResearchTrack[] = [
       and while uncompromising on decentralization.",
     icon: <Waypoints className="h-5 w-5" />,
     colorClass: 'teal',
+    status: 'active',
     progress: 10,
     lead: 'Pop',
     leadLink: 'https://github.com/ppopth',

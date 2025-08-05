@@ -10,6 +10,7 @@ export function ResearchTracks() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [allExpanded, setAllExpanded] = useState(true); // Start with all expanded
+  const [showInactive, setShowInactive] = useState(false); // Hide inactive by default
 
   // Get unique tags from all research tracks
   const allTags = Array.from(new Set(researchTracksData.flatMap((track) => track.tags))).sort();
@@ -19,8 +20,15 @@ export function ResearchTracks() {
       (searchTerm === '' ||
         track.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
         track.description.toLowerCase().includes(searchTerm.toLowerCase())) &&
-      (selectedTags.length === 0 || selectedTags.some((tag) => track.tags.includes(tag))),
-  );
+      (selectedTags.length === 0 || selectedTags.some((tag) => track.tags.includes(tag))) &&
+      (showInactive || track.status === 'active'),
+  ).sort((a, b) => {
+    // Sort by status: active first, inactive last
+    if (a.status === 'active' && b.status === 'inactive') return -1;
+    if (a.status === 'inactive' && b.status === 'active') return 1;
+    // If both have same status, maintain original order
+    return 0;
+  });
 
   const toggleTag = (tag: string) => {
     setSelectedTags((prev) =>
@@ -57,15 +65,26 @@ export function ResearchTracks() {
             )}
           </button>
         </div>
-        <div className="relative w-64">
-          <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-slate-400" />
-          <Input
-            type="text"
-            placeholder="Search research tracks..."
-            className="pl-8 bg-white border-slate-200"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
+        <div className="flex items-center gap-4">
+          <label className="flex items-center gap-2 text-sm font-medium text-slate-600">
+            <input
+              type="checkbox"
+              checked={showInactive}
+              onChange={(e) => setShowInactive(e.target.checked)}
+              className="rounded border-slate-300 text-slate-600 focus:ring-slate-500"
+            />
+            Show inactive tracks
+          </label>
+          <div className="relative w-64">
+            <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-slate-400" />
+            <Input
+              type="text"
+              placeholder="Search research tracks..."
+              className="pl-8 bg-white border-slate-200"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+          </div>
         </div>
       </div>
 
