@@ -253,7 +253,7 @@ export const researchTracksData: ResearchTrack[] = [
       },
       {
         title: 'Formally Verified SNARKs in Lean',
-        url: 'https://github.com/Verified-zkEVM/ZKLib',
+        url: 'https://github.com/Verified-zkEVM/ArkLib',
         type: 'code',
       },
       {
@@ -262,8 +262,8 @@ export const researchTracksData: ResearchTrack[] = [
         type: 'code',
       },
       {
-        title: 'zkLib Lean blueprint',
-        url: 'https://verified-zkevm.github.io/ZKLib/blueprint/index.html',
+        title: 'ArkLib Lean blueprint',
+        url: 'https://verified-zkevm.github.io/ArkLib/blueprint/index.html',
         type: 'website',
       },
     ],
