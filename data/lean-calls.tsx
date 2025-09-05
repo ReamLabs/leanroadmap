@@ -233,6 +233,11 @@ export const leanCallsData: LeanCall[] = [
         type: 'agenda',
       },
       {
+        title: 'Justin\'s Introduction Slides',
+        url: 'https://docs.google.com/presentation/d/1PpNcAOsoc7nXAeztavFXHMUCOFACy9pdrRUrlVqPRUY/edit?slide=id.p#slide=id.p',
+        type: 'slides',
+      },
+      {
         title: 'PQ Interop Slides',
         url: 'https://docs.google.com/presentation/d/1-rAV0gdy2ZVmqDrmLXmGoMclP2EJsYOoRBxogfq_uQc/edit?slide=id.g37bac8dfc79_0_960#slide=id.g37bac8dfc79_0_960',
         type: 'slides',
