@@ -15,20 +15,22 @@ export function ResearchTracks() {
   // Get unique tags from all research tracks
   const allTags = Array.from(new Set(researchTracksData.flatMap((track) => track.tags))).sort();
 
-  const filteredTracks = researchTracksData.filter(
-    (track) =>
-      (searchTerm === '' ||
-        track.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        track.description.toLowerCase().includes(searchTerm.toLowerCase())) &&
-      (selectedTags.length === 0 || selectedTags.some((tag) => track.tags.includes(tag))) &&
-      (showInactive || track.status === 'active'),
-  ).sort((a, b) => {
-    // Sort by status: active first, inactive last
-    if (a.status === 'active' && b.status === 'inactive') return -1;
-    if (a.status === 'inactive' && b.status === 'active') return 1;
-    // If both have same status, maintain original order
-    return 0;
-  });
+  const filteredTracks = researchTracksData
+    .filter(
+      (track) =>
+        (searchTerm === '' ||
+          track.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          track.description.toLowerCase().includes(searchTerm.toLowerCase())) &&
+        (selectedTags.length === 0 || selectedTags.some((tag) => track.tags.includes(tag))) &&
+        (showInactive || track.status === 'active'),
+    )
+    .sort((a, b) => {
+      // Sort by status: active first, inactive last
+      if (a.status === 'active' && b.status === 'inactive') return -1;
+      if (a.status === 'inactive' && b.status === 'active') return 1;
+      // If both have same status, maintain original order
+      return 0;
+    });
 
   const toggleTag = (tag: string) => {
     setSelectedTags((prev) =>

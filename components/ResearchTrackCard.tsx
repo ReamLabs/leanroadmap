@@ -116,7 +116,10 @@ export function ResearchTrackCard({ track, isExpanded, onToggle }: ResearchTrack
                 {track.title}
               </CardTitle>
               {isInactive && (
-                <Badge variant="outline" className="text-xs bg-slate-100 text-slate-500 border-slate-300">
+                <Badge
+                  variant="outline"
+                  className="text-xs bg-slate-100 text-slate-500 border-slate-300"
+                >
                   Inactive
                 </Badge>
               )}
@@ -171,14 +174,16 @@ export function ResearchTrackCard({ track, isExpanded, onToggle }: ResearchTrack
                                 ? 'text-slate-400'
                                 : 'text-slate-900'
                               : isInactive
-                              ? 'text-slate-300'
-                              : 'text-slate-500'
+                                ? 'text-slate-300'
+                                : 'text-slate-500'
                           }`}
                         >
                           {milestone.title}
                         </p>
                         {milestone.date && (
-                          <p className={`text-xs ${isInactive ? 'text-slate-300' : 'text-slate-400'}`}>
+                          <p
+                            className={`text-xs ${isInactive ? 'text-slate-300' : 'text-slate-400'}`}
+                          >
                             {milestone.date}
                           </p>
                         )}
@@ -205,7 +210,9 @@ export function ResearchTrackCard({ track, isExpanded, onToggle }: ResearchTrack
                     >
                       <ExternalLink className="h-3.5 w-3.5 shrink-0" />
                       <span>{resource.title}</span>
-                      <span className={`text-xs ml-auto ${isInactive ? 'text-slate-300' : 'text-slate-400'}`}>
+                      <span
+                        className={`text-xs ml-auto ${isInactive ? 'text-slate-300' : 'text-slate-400'}`}
+                      >
                         {resource.type}
                       </span>
                     </Link>
@@ -219,7 +226,9 @@ export function ResearchTrackCard({ track, isExpanded, onToggle }: ResearchTrack
             <Link
               href={track.leadLink}
               className={`hover:underline ${
-                isInactive ? 'text-slate-400 hover:text-slate-500' : 'text-slate-700 hover:text-slate-900'
+                isInactive
+                  ? 'text-slate-400 hover:text-slate-500'
+                  : 'text-slate-700 hover:text-slate-900'
               }`}
             >
               {track.lead}

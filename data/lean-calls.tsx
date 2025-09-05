@@ -277,7 +277,7 @@ export const leanCallsData: LeanCall[] = [
     title: 'Lean Call #10: Finality Sub-Spec',
     date: 'TBD',
     summary:
-      'Delving into the Finality sub-specification, including its technical details and implications for the network\'s finality',
+      "Delving into the Finality sub-specification, including its technical details and implications for the network's finality",
     thumbnail: null,
     youtubeUrl: '#',
   },
@@ -286,7 +286,7 @@ export const leanCallsData: LeanCall[] = [
     title: 'Lean Call #11: Lean Consensus Spec',
     date: 'TBD',
     summary:
-      "Lean Consensus specification discussion, covering the overall architecture and core components of Lean Consensus.",
+      'Lean Consensus specification discussion, covering the overall architecture and core components of Lean Consensus.',
     thumbnail: null,
     youtubeUrl: '#',
   },
