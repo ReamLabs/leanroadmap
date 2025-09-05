@@ -233,7 +233,7 @@ export const leanCallsData: LeanCall[] = [
         type: 'agenda',
       },
       {
-        title: 'Justin\'s Introduction Slides',
+        title: "Justin's Introduction Slides",
         url: 'https://docs.google.com/presentation/d/1PpNcAOsoc7nXAeztavFXHMUCOFACy9pdrRUrlVqPRUY/edit?slide=id.p#slide=id.p',
         type: 'slides',
       },
