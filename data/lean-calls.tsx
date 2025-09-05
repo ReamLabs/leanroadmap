@@ -30,7 +30,7 @@ export function determineLeanCallStatus(date: string): LeanCallStatus {
 export const leanCallsData: LeanCall[] = [
   {
     id: 'call-1',
-    title: 'Beam Call #1: Social Layer Updates',
+    title: 'Lean Call #1: Social Layer Updates',
     date: 'February 14, 2025',
     summary:
       'The kickoff call covering social layer progress, funding structures, legal updates, introductions of research specialists and client teams, and coordinator presentations',
@@ -51,7 +51,7 @@ export const leanCallsData: LeanCall[] = [
   },
   {
     id: 'call-2',
-    title: 'Beam Call #2: Post-Quantum Security',
+    title: 'Lean Call #2: Post-Quantum Security',
     date: 'February 28, 2025',
     summary:
       'Technical updates on post-quantum cryptography solutions, featuring technical presentations from researchers on signature schemes, hash functions, minimal zkVMs, and formal verification.',
@@ -92,7 +92,7 @@ export const leanCallsData: LeanCall[] = [
   },
   {
     id: 'call-3',
-    title: 'Beam Call #3: P2P Networking',
+    title: 'Lean Call #3: P2P Networking',
     date: 'April 4, 2025',
     summary: 'Discussion on the latest developments in peer-to-peer networking.',
     thumbnail: null,
@@ -152,7 +152,7 @@ export const leanCallsData: LeanCall[] = [
   },
   {
     id: 'call-4',
-    title: 'Beam Call #4: Exit Queue',
+    title: 'Lean Call #4: Exit Queue',
     date: 'April 18, 2025',
     summary:
       'Discussion of Ethereum validator exit mechanisms and proposals to improve exit queue flexibility while maintaining protocol security.',
@@ -178,7 +178,7 @@ export const leanCallsData: LeanCall[] = [
   },
   {
     id: 'call-5',
-    title: 'Beam Call #5: APS (Attester-Proposer Separation)',
+    title: 'Lean Call #5: APS (Attester-Proposer Separation)',
     date: 'May 2, 2025',
     summary:
       'Exploration of the Attester-Proposer Separation (APS) concept, its benefits, and potential applications for Lean Consensus.',
@@ -199,7 +199,7 @@ export const leanCallsData: LeanCall[] = [
   },
   {
     id: 'call-6',
-    title: 'Beam Call #6: 3SF (Finality)',
+    title: 'Lean Call #6: 3SF (Finality)',
     date: 'May 16, 2025',
     summary:
       'Discussion on the finality of the 3SF protocol, including its implementation and implications on the network.',
@@ -220,25 +220,43 @@ export const leanCallsData: LeanCall[] = [
   },
   {
     id: 'call-7',
-    title: 'Lean Call #7: Rainbow Staking',
-    date: 'TBD',
-    summary:
-      'Introduction to Rainbow Staking, a novel staking mechanism designed to enhance network security and decentralization.',
-    thumbnail: null,
-    youtubeUrl: '#',
-  },
-  {
-    id: 'call-8',
-    title: 'Lean Call #8: PQ Sub-Spec',
-    date: 'TBD',
+    title: 'Lean Call #7: PQ Sub-Spec',
+    date: 'September 5, 2025',
     summary:
       'In-depth discussion on the Post-Quantum (PQ) sub-specification, focusing on its cryptographic aspects and integration into Lean Consensus.',
     thumbnail: null,
-    youtubeUrl: '#',
+    youtubeUrl: 'https://www.youtube.com/watch?v=hAIp_JHrr4I',
+    resources: [
+      {
+        title: 'Meeting agenda',
+        url: 'https://github.com/ethereum/pm/issues/1717',
+        type: 'agenda',
+      },
+      {
+        title: 'PQ Interop Slides',
+        url: 'https://docs.google.com/presentation/d/1-rAV0gdy2ZVmqDrmLXmGoMclP2EJsYOoRBxogfq_uQc/edit?slide=id.g37bac8dfc79_0_960#slide=id.g37bac8dfc79_0_960',
+        type: 'slides',
+      },
+      {
+        title: 'leanSpec Slides',
+        url: 'https://docs.google.com/presentation/d/18wU24mrRrkYzO-vtZJEw6R9Apv5Nzxw7cFbrWnnegck/edit?slide=id.p#slide=id.p',
+        type: 'slides',
+      },
+      {
+        title: 'Lean MultiSig Spec Slides',
+        url: 'https://docs.google.com/presentation/d/1IUq91Qm8ma7-jDALNkdrO4ostLbh1PFajIB6k_cLEuA/edit?slide=id.p#slide=id.p',
+        type: 'slides',
+      },
+      {
+        title: 'Minimal ZKVM for Lean Slides',
+        url: 'https://docs.google.com/presentation/d/11DV4QPP2ZPYDsqnTeqBILfQYXZi-MxtAcLEe2lFSvNM/edit?slide=id.p#slide=id.p',
+        type: 'slides',
+      },
+    ],
   },
   {
-    id: 'call-9',
-    title: 'Lean Call #9: P2P Sub-Spec',
+    id: 'call-8',
+    title: 'Lean Call #8: P2P Sub-Spec',
     date: 'TBD',
     summary:
       'Examination of the Peer-to-Peer (P2P) sub-specification, covering its role in facilitating decentralized communication within Lean Consensus.',
@@ -246,38 +264,29 @@ export const leanCallsData: LeanCall[] = [
     youtubeUrl: '#',
   },
   {
-    id: 'call-10',
-    title: 'Lean Call #10: APS Sub-Spec',
+    id: 'call-9',
+    title: 'Lean Call #9: Rainbow Staking Sub-Spec',
     date: 'TBD',
     summary:
-      'Exploring the Attester-Proposer Separation (APS) sub-specification, its benefits, and potential applications in Lean Consensus.',
+      'Introduction to Rainbow Staking, a novel staking mechanism designed to enhance network security and decentralization.',
+    thumbnail: null,
+    youtubeUrl: '#',
+  },
+  {
+    id: 'call-10',
+    title: 'Lean Call #10: Finality Sub-Spec',
+    date: 'TBD',
+    summary:
+      'Delving into the Finality sub-specification, including its technical details and implications for the network\'s finality',
     thumbnail: null,
     youtubeUrl: '#',
   },
   {
     id: 'call-11',
-    title: 'Lean Call #11: 3SF Sub-Spec',
+    title: 'Lean Call #11: Lean Consensus Spec',
     date: 'TBD',
     summary:
-      "Delving into the 3SF sub-specification, including its technical details and implications for the network's finality.",
-    thumbnail: null,
-    youtubeUrl: '#',
-  },
-  {
-    id: 'call-12',
-    title: 'Lean Call #12: Lean Consensus Spec (Part 1)',
-    date: 'TBD',
-    summary:
-      'First part of the Lean Consensus specification discussion, covering the overall architecture and core components of Lean Consensus.',
-    thumbnail: null,
-    youtubeUrl: '#',
-  },
-  {
-    id: 'call-13',
-    title: 'Lean Call #13: Lean Consensus Spec (Part 2)',
-    date: 'December 26, 2025',
-    summary:
-      "Second part of the Lean Consensus specification discussion, focusing on the protocol's advanced features, security considerations, and future development plans.",
+      "Lean Consensus specification discussion, covering the overall architecture and core components of Lean Consensus.",
     thumbnail: null,
     youtubeUrl: '#',
   },
