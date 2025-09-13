@@ -50,4 +50,10 @@ export const keyResourcesData: KeyResource[] = [
     url: 'https://x.com/VitalikButerin/status/1885046277932552697',
     date: 'Jan 2025',
   },
+  {
+    icon: FileText,
+    title: 'Beam Day ETHCC 2025 Event Overview',
+    url: 'https://hackmd.io/@willcorcoran/BkZ-gs5Bll',
+    date: 'June 2025',
+   },
 ];
