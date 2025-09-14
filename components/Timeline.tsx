@@ -2,16 +2,33 @@ import { Card } from '@/components/ui/primitives';
 import { getCurrentDate } from '@/lib/utils';
 import { timelineData, TIMELINE_CONFIG } from '@/data/timeline';
 
+type TimelineDate = {
+  year: number;
+  month: number;
+};
+
+const getTimelineDate = (): TimelineDate => {
+  const date = new Date();
+  return {
+    year: date.getFullYear(),
+    month: 12,
+  };
+};
+
 // Helper function to convert date to months since start
-const getMonthsSinceStart = (date: { year: number; month: number }) => {
+const getMonthsSinceStart = (date: TimelineDate) => {
   return (date.year - TIMELINE_CONFIG.START_YEAR) * 12 + (date.month - 1);
 };
 
 // Helper function to calculate grid position percentage
-const getGridPosition = (date: { year: number; month: number }) => {
-  const totalMonths = getMonthsSinceStart(date);
-  return (totalMonths / TIMELINE_CONFIG.TOTAL_MONTHS) * 100;
-};
+const getGridOffsetPercentage = (date: TimelineDate) => {
+  const currentMonths = getMonthsSinceStart(date);
+
+  // Adjust for grid
+  // Each column represents 12 months, so we need to map the percentage to the grid
+  const gridOffset = (currentMonths / 12) / (TIMELINE_CONFIG.END_YEAR - TIMELINE_CONFIG.START_YEAR + 1) * 100;
+  return gridOffset;
+}
 
 const getGridRange = (
   startDate: { year: number; month: number },
@@ -28,12 +45,8 @@ const getGridRange = (
 };
 
 export function Timeline() {
-  const now = getCurrentDate();
-  const CURRENT_DATE = {
-    year: now.getFullYear(),
-    month: now.getMonth(),
-  };
-  const currentOffset = getGridPosition(CURRENT_DATE);
+  const CURRENT_DATE = getTimelineDate();
+  const weHereMarkerOffsetPercentage = getGridOffsetPercentage(CURRENT_DATE);
 
   return (
     <Card className="bg-white border-slate-200 p-4 overflow-clip">
@@ -67,7 +80,7 @@ export function Timeline() {
           <div
             className="absolute w-0 border-l border-dashed border-slate-600/30 animate-pulse-subtle"
             style={{
-              left: `${currentOffset}%`,
+              left: `${weHereMarkerOffsetPercentage}%`,
               top: '1.5rem', // Start after year labels
               bottom: '0', // Extend to bottom
               zIndex: 0,
