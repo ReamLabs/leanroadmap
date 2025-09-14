@@ -1,5 +1,4 @@
 import { Card } from '@/components/ui/primitives';
-import { getCurrentDate } from '@/lib/utils';
 import { timelineData, TIMELINE_CONFIG } from '@/data/timeline';
 
 type TimelineDate = {
@@ -11,7 +10,7 @@ const getTimelineDate = (): TimelineDate => {
   const date = new Date();
   return {
     year: date.getFullYear(),
-    month: 12,
+    month: date.getMonth() + 1,
   };
 };
 
@@ -23,11 +22,11 @@ const getMonthsSinceStart = (date: TimelineDate) => {
 // Helper function to calculate grid position percentage
 const getGridOffsetPercentage = (date: TimelineDate) => {
   const currentMonths = getMonthsSinceStart(date);
+  // Use the same calculation as timeline bars for consistency
+  const totalMonths = TIMELINE_CONFIG.TOTAL_MONTHS + 12;
+  const percentage = (currentMonths / totalMonths) * 100;
 
-  // Adjust for grid
-  // Each column represents 12 months, so we need to map the percentage to the grid
-  const gridOffset = (currentMonths / 12) / (TIMELINE_CONFIG.END_YEAR - TIMELINE_CONFIG.START_YEAR + 1) * 100;
-  return gridOffset;
+  return percentage;
 }
 
 const getGridRange = (
