@@ -27,7 +27,7 @@ const getGridOffsetPercentage = (date: TimelineDate) => {
   const percentage = (currentMonths / totalMonths) * 100;
 
   return percentage;
-}
+};
 
 const getGridRange = (
   startDate: { year: number; month: number },
