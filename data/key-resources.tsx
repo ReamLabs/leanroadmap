@@ -1,4 +1,4 @@
-import { Youtube, FileText, Twitter } from 'lucide-react';
+import { Youtube, FileText, Twitter, Code } from 'lucide-react';
 
 export type KeyResource = {
   icon: typeof Youtube | typeof FileText | typeof Twitter;
@@ -49,5 +49,17 @@ export const keyResourcesData: KeyResource[] = [
     title: 'Twitter post on the beam chain roadmap by Vitalik Buterin',
     url: 'https://x.com/VitalikButerin/status/1885046277932552697',
     date: 'Jan 2025',
+  },
+  {
+    icon: FileText,
+    title: 'lean Ethereum by Justin Drake',
+    url: 'https://blog.ethereum.org/2025/07/31/lean-ethereum',
+    date: 'July 2025',
+  },
+  {
+    icon: Code,
+    title: 'Lean Ethereum Specifications',
+    url: 'https://github.com/leanEthereum/leanSpec',
+    date: 'September 2025',
   },
 ];
