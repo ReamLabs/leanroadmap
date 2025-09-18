@@ -47,9 +47,13 @@ export const clientTeamsData: ClientTeam[] = [
     id: 'lantern',
     name: 'Lantern',
     description:
-      'The team developing C-based Ethereum consensus layer libraries focused on enabling devices with limited compute to verify state root with zk proofs.',
+      'By Pier Two. C-based Ethereum Lean Consensus client. Focused on enabling devices with limited compute to follow the consensus.',
     status: 'new',
-    links: [],
+    links: [
+      { type: 'website', url: 'https://piertwo.com/' },
+      { type: 'twitter', url: 'https://x.com/PierTwo_com' },
+      { type: 'github', url: 'https://github.com/Pier-Two' }
+    ],
   },
   {
     id: 'lambdaclass',
