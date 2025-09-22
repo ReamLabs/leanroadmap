@@ -52,7 +52,7 @@ export const clientTeamsData: ClientTeam[] = [
     links: [
       { type: 'website', url: 'https://piertwo.com/' },
       { type: 'twitter', url: 'https://x.com/PierTwo_com' },
-      { type: 'github', url: 'https://github.com/Pier-Two' }
+      { type: 'github', url: 'https://github.com/Pier-Two' },
     ],
   },
   {
