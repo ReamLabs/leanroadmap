@@ -142,8 +142,13 @@ export const researchTracksData: ResearchTrack[] = [
         type: 'paper',
       },
       {
-        title: 'Reference implementation in Rust',
+        title: 'Reference implementation in Rust (old)',
         url: 'https://github.com/b-wagn/hash-sig',
+        type: 'code',
+      },
+      {
+        title: 'Reference implementation in Rust (actively maintained)',
+        url: 'https://github.com/leanEthereum/leanSig',
         type: 'code',
       },
     ],
