@@ -19,7 +19,7 @@ export function Dashboard() {
             Track Lean Consensus research progress across all workstreams
           </p>
         </div>
-        <Badge variant="outline">Last updated: September 2025</Badge>
+        <Badge variant="outline">Last updated: December 2025</Badge>
       </header>
 
       <section>
