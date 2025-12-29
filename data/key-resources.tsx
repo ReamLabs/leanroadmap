@@ -62,4 +62,10 @@ export const keyResourcesData: KeyResource[] = [
     url: 'https://github.com/leanEthereum/leanSpec',
     date: 'September 2025',
   },
+  {
+    icon: Youtube,
+    title: 'lean Ethereum | part I',
+    url: 'https://www.youtube.com/watch?v=WaNgzP3OlWk',
+    date: 'Dec 2025',
+  },
 ];
