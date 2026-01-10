@@ -159,6 +159,12 @@ export const researchTracksData: ResearchTrack[] = [
         url: 'https://github.com/leanEthereum/leanSig',
         type: 'code',
       },
+      {
+        title: 'Aborting Random Oracles: How to Build them, How to Use them',
+        url: 'https://eprint.iacr.org/2026/016',
+        type: 'paper',
+        date: '2026-01',
+      },
     ],
   },
   {
