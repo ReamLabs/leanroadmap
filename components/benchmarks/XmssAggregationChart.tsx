@@ -11,11 +11,7 @@ import {
   ReferenceLine,
   ResponsiveContainer,
 } from 'recharts';
-import {
-  xmssAggregationData,
-  xmssSeriesConfig,
-  XMSS_TARGET,
-} from '@/data/xmss-aggregation';
+import { xmssAggregationData, xmssSeriesConfig, XMSS_TARGET } from '@/data/xmss-aggregation';
 
 const formatDate = (date: string): string => {
   return new Date(date).toLocaleDateString('en-US', { month: 'numeric', day: 'numeric' });
@@ -28,10 +24,7 @@ export function XmssAggregationChart() {
         XMSS Aggregated / Second
       </h4>
       <ResponsiveContainer width="100%" height={240}>
-        <LineChart
-          data={xmssAggregationData}
-          margin={{ top: 0, right: 40, left: 0, bottom: 0 }}
-        >
+        <LineChart data={xmssAggregationData} margin={{ top: 0, right: 40, left: 0, bottom: 0 }}>
           <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
           <XAxis
             dataKey="date"

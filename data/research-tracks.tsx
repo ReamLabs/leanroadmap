@@ -1,5 +1,15 @@
 import type { ReactNode } from 'react';
-import { Shield, Lock, FileCheck, Cpu, Feather, FileCode, Waypoints, Split, Zap } from 'lucide-react';
+import {
+  Shield,
+  Lock,
+  FileCheck,
+  Cpu,
+  Feather,
+  FileCode,
+  Waypoints,
+  Split,
+  Zap,
+} from 'lucide-react';
 
 export interface ResearchTrack {
   id: string;
@@ -350,7 +360,7 @@ export const researchTracksData: ResearchTrack[] = [
         url: 'https://docs.google.com/presentation/d/1Ws-iPfzzA3N2BCLiMgJGb_LbSiGllK4LCs6CCx3Yswo/edit',
         type: 'presentation',
         date: '2025-11',
-      }
+      },
     ],
   },
   {
@@ -367,9 +377,7 @@ export const researchTracksData: ResearchTrack[] = [
     lead: 'TBD',
     leadLink: '',
     tags: ['Consensus', 'Scaling'],
-    milestones: [
-      { title: 'Exploratory research', completed: false },
-    ],
+    milestones: [{ title: 'Exploratory research', completed: false }],
     resources: [
       {
         title: 'Attester-Proposer Separation Tracker',
@@ -383,7 +391,7 @@ export const researchTracksData: ResearchTrack[] = [
         date: '2024-02',
       },
       {
-        title: 'Attester-Proposer Separation Seminar Presentation at King\'s College London',
+        title: "Attester-Proposer Separation Seminar Presentation at King's College London",
         url: 'https://docs.google.com/presentation/d/1C4Iykpf-zNqCE1TyWxDzzw_A7n52GaUJz01Hw5v-NPo/edit',
         type: 'presentation',
         date: '2025-01',
@@ -416,9 +424,7 @@ export const researchTracksData: ResearchTrack[] = [
     lead: 'Barnabé Monnot',
     leadLink: 'https://x.com/barnabemonnot',
     tags: ['Consensus', 'Scaling'],
-    milestones: [
-      { title: 'Exploratory research', completed: false },
-    ],
+    milestones: [{ title: 'Exploratory research', completed: false }],
     resources: [
       {
         title: 'A Simple Single Slot Finality Protocol For Ethereum',

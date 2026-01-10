@@ -47,7 +47,6 @@ export function Timeline() {
   const CURRENT_DATE = getTimelineDate();
   const weHereMarkerOffsetPercentage = getGridOffsetPercentage(CURRENT_DATE);
 
-
   return (
     <Card className="relative bg-white/80 backdrop-blur-sm border-slate-200/60 p-6 overflow-visible shadow-sm">
       {/* Subtle decorative gradient */}

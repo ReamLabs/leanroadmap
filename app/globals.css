@@ -37,7 +37,9 @@ body {
   background: hsl(var(--color-paper));
   color: hsl(var(--color-text));
   letter-spacing: -0.01em;
-  font-feature-settings: 'ss01' on, 'ss02' on;
+  font-feature-settings:
+    'ss01' on,
+    'ss02' on;
 
   /* Subtle texture overlay */
   background-image:
@@ -54,7 +56,9 @@ body {
   /* Utility for distinctive mono numbers */
   .font-mono-data {
     font-family: 'JetBrains Mono', monospace;
-    font-feature-settings: 'tnum' on, 'ss01' on;
+    font-feature-settings:
+      'tnum' on,
+      'ss01' on;
   }
 
   /* Display serif for emphasis */

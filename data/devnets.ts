@@ -33,8 +33,11 @@ export const devnetsData: Devnet[] = [
     ],
     clients: ['Ream', 'Zeam', 'Qlean'],
     links: [
-      { title: 'High-level specification', url: 'https://github.com/leanEthereum/pm/blob/main/breakout-rooms/leanConsensus/pq-interop/pq-devnet-0.md' },
-      { title: 'Recap by ReamLabs', url: 'https://hackmd.io/@reamlabs/ryYUl04Rle'},
+      {
+        title: 'High-level specification',
+        url: 'https://github.com/leanEthereum/pm/blob/main/breakout-rooms/leanConsensus/pq-interop/pq-devnet-0.md',
+      },
+      { title: 'Recap by ReamLabs', url: 'https://hackmd.io/@reamlabs/ryYUl04Rle' },
     ],
   },
   {
@@ -53,7 +56,10 @@ export const devnetsData: Devnet[] = [
     ],
     clients: ['Ream', 'Zeam', 'Qlean', 'Lantern', 'Lighthouse'],
     links: [
-      { title: 'High-level specification', url: 'https://github.com/leanEthereum/pm/blob/main/breakout-rooms/leanConsensus/pq-interop/pq-devnet-1.md' },
+      {
+        title: 'High-level specification',
+        url: 'https://github.com/leanEthereum/pm/blob/main/breakout-rooms/leanConsensus/pq-interop/pq-devnet-1.md',
+      },
     ],
   },
   {
@@ -67,7 +73,10 @@ export const devnetsData: Devnet[] = [
     ],
     clients: ['Ream', 'Zeam', 'Qlean', 'Lantern', 'Lighthouse'],
     links: [
-      { title: 'High-level specification', url: 'https://github.com/leanEthereum/pm/blob/main/breakout-rooms/leanConsensus/pq-interop/pq-devnet-2.md' },
+      {
+        title: 'High-level specification',
+        url: 'https://github.com/leanEthereum/pm/blob/main/breakout-rooms/leanConsensus/pq-interop/pq-devnet-2.md',
+      },
     ],
   },
 ];

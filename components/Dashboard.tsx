@@ -84,7 +84,9 @@ export function Dashboard() {
             <div className="flex items-center gap-3">
               <div className="h-4 w-px bg-gradient-to-b from-teal-400 to-teal-300" />
               <div>
-                <div className="text-[9px] uppercase tracking-widest text-slate-500">Lean Ethereum</div>
+                <div className="text-[9px] uppercase tracking-widest text-slate-500">
+                  Lean Ethereum
+                </div>
                 <h1 className="text-base font-medium text-white leading-tight">
                   Lean Consensus <span className="font-display text-slate-400">R&D Progress</span>
                 </h1>
@@ -167,7 +169,8 @@ export function Dashboard() {
 
             {/* Subtitle */}
             <p className="text-base md:text-lg text-slate-500 max-w-md md:max-w-lg leading-relaxed">
-              Track <span className="text-slate-700 font-medium">Lean Consensus</span> research & engineering progress across all workstreams
+              Track <span className="text-slate-700 font-medium">Lean Consensus</span> research &
+              engineering progress across all workstreams
             </p>
           </div>
 

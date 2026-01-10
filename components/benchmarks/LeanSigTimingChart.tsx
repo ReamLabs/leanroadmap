@@ -10,10 +10,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from 'recharts';
-import {
-  leanSigTimingData,
-  leanSigSeriesConfig,
-} from '@/data/leansig-timing';
+import { leanSigTimingData, leanSigSeriesConfig } from '@/data/leansig-timing';
 
 export function LeanSigTimingChart() {
   const hasData = leanSigTimingData.length > 0;
@@ -25,10 +22,7 @@ export function LeanSigTimingChart() {
       </h4>
       <ResponsiveContainer width="100%" height={240}>
         {hasData ? (
-          <LineChart
-            data={leanSigTimingData}
-            margin={{ top: 0, right: 40, left: 0, bottom: 0 }}
-          >
+          <LineChart data={leanSigTimingData} margin={{ top: 0, right: 40, left: 0, bottom: 0 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
             <XAxis
               dataKey="date"

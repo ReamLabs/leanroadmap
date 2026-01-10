@@ -9,7 +9,7 @@ interface UseCountUpOptions {
 
 export function useCountUp(
   endValue: number,
-  options: UseCountUpOptions = {}
+  options: UseCountUpOptions = {},
 ): [number, () => void, boolean] {
   const { duration = 1000, startOnMount = false } = options;
   const [currentValue, setCurrentValue] = useState(startOnMount ? 0 : endValue);

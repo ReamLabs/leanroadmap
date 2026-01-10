@@ -7,7 +7,11 @@ import { LeanCall, leanCallsData, determineLeanCallStatus } from '@/data/lean-ca
 
 const formatDate = (date: string): string => {
   if (date === 'TBD') return 'TBD';
-  return new Date(date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+  return new Date(date).toLocaleDateString('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+  });
 };
 
 // Helper function to extract YouTube video ID from URL

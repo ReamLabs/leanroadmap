@@ -57,7 +57,9 @@ export function ClientImplementations() {
                   <Github className="h-4 w-4" />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <div className="text-[10px] text-slate-500 uppercase tracking-wide">Repository</div>
+                  <div className="text-[10px] text-slate-500 uppercase tracking-wide">
+                    Repository
+                  </div>
                   <div className="text-sm font-mono text-slate-800 truncate">
                     {team.leanRepo.replace('https://github.com/', '')}
                   </div>

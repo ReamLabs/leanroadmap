@@ -46,18 +46,16 @@ export function DevnetCard({ devnet }: DevnetCardProps) {
         {/* Header */}
         <div className="flex items-start justify-between mb-3">
           <div>
-            <h3 className="font-mono-data text-base font-semibold text-slate-800">
-              {devnet.name}
-            </h3>
+            <h3 className="font-mono-data text-base font-semibold text-slate-800">{devnet.name}</h3>
             {devnet.date && (
-              <span className="text-xs text-slate-400">{formatDate(devnet.date, devnet.status)}</span>
+              <span className="text-xs text-slate-400">
+                {formatDate(devnet.date, devnet.status)}
+              </span>
             )}
           </div>
           <div className={`flex items-center gap-1.5 px-2 py-1 rounded-full ${status.bg}/10`}>
             <StatusIcon className={`h-3.5 w-3.5 ${status.text}`} />
-            <span className={`text-[10px] font-medium ${status.text}`}>
-              {status.label}
-            </span>
+            <span className={`text-[10px] font-medium ${status.text}`}>{status.label}</span>
           </div>
         </div>
 

@@ -84,7 +84,12 @@ export function Overview() {
                 </div>
                 <div className="relative text-slate-300 group-hover:text-slate-900 group-hover:translate-x-1 transition-all duration-300">
                   <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                 </div>
               </a>
@@ -119,14 +124,18 @@ export function Overview() {
                 </div>
                 <div className="relative text-slate-300 group-hover:text-slate-900 group-hover:translate-x-1 transition-all duration-300">
                   <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                 </div>
               </a>
             ))}
         </div>
       </div>
-
     </div>
   );
 }

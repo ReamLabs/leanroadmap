@@ -73,7 +73,11 @@ export function Benchmarks() {
                   }`}
                 >
                   <div className="flex flex-col">
-                    <span className={`text-sm ${metric.highlight ? 'font-semibold text-slate-700' : 'text-slate-600'}`}>{metric.label}</span>
+                    <span
+                      className={`text-sm ${metric.highlight ? 'font-semibold text-slate-700' : 'text-slate-600'}`}
+                    >
+                      {metric.label}
+                    </span>
                     {metric.note && (
                       <span className="text-[10px] text-slate-400 mt-0.5">{metric.note}</span>
                     )}
@@ -83,15 +87,19 @@ export function Benchmarks() {
                       <AnimatedValue
                         value={metric.value}
                         className={`font-mono-data text-lg ${
-                          metric.highlight ? 'font-bold text-teal-600' : 'font-semibold text-slate-800'
+                          metric.highlight
+                            ? 'font-bold text-teal-600'
+                            : 'font-semibold text-slate-800'
                         }`}
                       />
-                      {metric.unit && (
-                        <span className="text-xs text-slate-500">{metric.unit}</span>
-                      )}
+                      {metric.unit && <span className="text-xs text-slate-500">{metric.unit}</span>}
                     </div>
                     {metric.subValue && (
-                      <span className={`text-[10px] ${getPercentageColor(metric.subValue, metric.label)}`}>{metric.subValue}</span>
+                      <span
+                        className={`text-[10px] ${getPercentageColor(metric.subValue, metric.label)}`}
+                      >
+                        {metric.subValue}
+                      </span>
                     )}
                   </div>
                 </div>

@@ -1,4 +1,13 @@
-import { BookOpen, BarChart3, KeyRound, Package, Youtube, MessageCircle, Twitter, LucideIcon } from 'lucide-react';
+import {
+  BookOpen,
+  BarChart3,
+  KeyRound,
+  Package,
+  Youtube,
+  MessageCircle,
+  Twitter,
+  LucideIcon,
+} from 'lucide-react';
 
 export interface CallToAction {
   title: string;

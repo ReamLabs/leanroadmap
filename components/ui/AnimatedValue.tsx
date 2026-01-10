@@ -57,7 +57,7 @@ export function AnimatedValue({ value, className, duration = 1000 }: AnimatedVal
           const minDecimals = parsed.rangeMin % 1 !== 0 ? 1 : 0;
           const maxDecimals = parsed.rangeMax % 1 !== 0 ? 1 : 0;
           setDisplayValue(
-            `${parsed.prefix}${formatNumber(currentMin, minDecimals)} - ${formatNumber(currentMax, maxDecimals)}`
+            `${parsed.prefix}${formatNumber(currentMin, minDecimals)} - ${formatNumber(currentMax, maxDecimals)}`,
           );
         } else if (parsed.number !== null) {
           const currentNum = easeOut * parsed.number;
@@ -82,7 +82,7 @@ export function AnimatedValue({ value, className, duration = 1000 }: AnimatedVal
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     observer.observe(element);
