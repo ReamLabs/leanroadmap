@@ -81,8 +81,12 @@ export function LeanSigTimingChart() {
                   fontSize={11}
                   fill="#555555"
                 >
-                  <tspan x={viewBox.width + viewBox.x - 5} dy={0}>Target</tspan>
-                  <tspan x={viewBox.width + viewBox.x - 5} dy={13}>({LEANSIG_TIMING_TARGET} µs)</tspan>
+                  <tspan x={viewBox.width + viewBox.x - 5} dy={0}>
+                    Target
+                  </tspan>
+                  <tspan x={viewBox.width + viewBox.x - 5} dy={13}>
+                    ({LEANSIG_TIMING_TARGET} µs)
+                  </tspan>
                 </text>
               )}
             />
@@ -90,13 +94,23 @@ export function LeanSigTimingChart() {
               dataKey="signing"
               fill={seriesConfig.signing.color}
               radius={[4, 4, 0, 0]}
-              label={{ position: 'top', fontSize: 9, fill: '#94a3b8', formatter: (v: number) => `${v}µs` }}
+              label={{
+                position: 'top',
+                fontSize: 9,
+                fill: '#94a3b8',
+                formatter: (v: number) => `${v}µs`,
+              }}
             />
             <Bar
               dataKey="verification"
               fill={seriesConfig.verification.color}
               radius={[4, 4, 0, 0]}
-              label={{ position: 'top', fontSize: 9, fill: '#94a3b8', formatter: (v: number) => `${v}µs` }}
+              label={{
+                position: 'top',
+                fontSize: 9,
+                fill: '#94a3b8',
+                formatter: (v: number) => `${v}µs`,
+              }}
             />
           </BarChart>
         ) : (

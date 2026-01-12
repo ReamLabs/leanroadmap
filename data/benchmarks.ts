@@ -1,4 +1,9 @@
-import { xmssLatest, XMSS_AGGREGATE_TIMING_TARGET, AGGREGATE_SIZE_TARGET, aggregateSize } from './benchmarks/xmss-aggregation';
+import {
+  xmssLatest,
+  XMSS_AGGREGATE_TIMING_TARGET,
+  AGGREGATE_SIZE_TARGET,
+  aggregateSize,
+} from './benchmarks/xmss-aggregation';
 import { leanSigTimingData, LEANSIG_TIMING_TARGET } from './benchmarks/leansig-timing';
 
 export interface BenchmarkCategory {

@@ -51,4 +51,3 @@ export const xmssLatest = {
   m4: getLatestValue('m4'),
   m4vm: getLatestValue('m4vm'),
 };
-

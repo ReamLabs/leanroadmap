@@ -11,7 +11,10 @@ import {
   ReferenceLine,
   ResponsiveContainer,
 } from 'recharts';
-import { xmssAggregationData, XMSS_AGGREGATE_TIMING_TARGET } from '@/data/benchmarks/xmss-aggregation';
+import {
+  xmssAggregationData,
+  XMSS_AGGREGATE_TIMING_TARGET,
+} from '@/data/benchmarks/xmss-aggregation';
 
 const seriesConfig = {
   i9: {
