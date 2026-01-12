@@ -11,7 +11,22 @@ import {
   ReferenceLine,
   ResponsiveContainer,
 } from 'recharts';
-import { xmssAggregationData, xmssSeriesConfig, XMSS_TARGET } from '@/data/xmss-aggregation';
+import { xmssAggregationData, XMSS_AGGREGATE_TIMING_TARGET } from '@/data/benchmarks/xmss-aggregation';
+
+const seriesConfig = {
+  i9: {
+    label: 'i9-12900H',
+    color: '#2e86ab',
+  },
+  m4: {
+    label: 'M4 Max (efficient)',
+    color: '#ef4444',
+  },
+  m4vm: {
+    label: 'M4 Max (lean-vm-simple)',
+    color: '#22c55e',
+  },
+};
 
 const formatDate = (date: string): string => {
   return new Date(date).toLocaleDateString('en-US', { month: 'numeric', day: 'numeric' });
@@ -48,24 +63,24 @@ export function XmssAggregationChart() {
               fontSize: '12px',
             }}
             formatter={(value: number, name: string) => {
-              const config = xmssSeriesConfig[name as keyof typeof xmssSeriesConfig];
+              const config = seriesConfig[name as keyof typeof seriesConfig];
               return [value, config?.label || name];
             }}
           />
           <Legend
             wrapperStyle={{ fontSize: '11px', paddingTop: '10px' }}
             formatter={(value: string) => {
-              const config = xmssSeriesConfig[value as keyof typeof xmssSeriesConfig];
+              const config = seriesConfig[value as keyof typeof seriesConfig];
               return config?.label || value;
             }}
           />
           <ReferenceLine
-            y={XMSS_TARGET}
+            y={XMSS_AGGREGATE_TIMING_TARGET}
             stroke="#555555"
             strokeDasharray="7 3"
             strokeWidth={2}
             label={{
-              value: `Target (${XMSS_TARGET}/s)`,
+              value: `Target (${XMSS_AGGREGATE_TIMING_TARGET}/s)`,
               position: 'insideTopLeft',
               fontSize: 11,
               fill: '#555555',
@@ -74,25 +89,25 @@ export function XmssAggregationChart() {
           <Line
             type="monotone"
             dataKey="i9"
-            stroke={xmssSeriesConfig.i9.color}
+            stroke={seriesConfig.i9.color}
             strokeWidth={2}
-            dot={{ fill: xmssSeriesConfig.i9.color, strokeWidth: 0, r: 4 }}
+            dot={{ fill: seriesConfig.i9.color, strokeWidth: 0, r: 4 }}
             connectNulls
           />
           <Line
             type="monotone"
             dataKey="m4"
-            stroke={xmssSeriesConfig.m4.color}
+            stroke={seriesConfig.m4.color}
             strokeWidth={2}
-            dot={{ fill: xmssSeriesConfig.m4.color, strokeWidth: 0, r: 4 }}
+            dot={{ fill: seriesConfig.m4.color, strokeWidth: 0, r: 4 }}
             connectNulls
           />
           <Line
             type="monotone"
             dataKey="m4vm"
-            stroke={xmssSeriesConfig.m4vm.color}
+            stroke={seriesConfig.m4vm.color}
             strokeWidth={2}
-            dot={{ fill: xmssSeriesConfig.m4vm.color, strokeWidth: 0, r: 4 }}
+            dot={{ fill: seriesConfig.m4vm.color, strokeWidth: 0, r: 4 }}
             connectNulls
           />
         </LineChart>

@@ -26,7 +26,7 @@ export const xmssAggregationData: XmssDataPoint[] = [
   { date: '2025-12-05', m4: 970, m4vm: 815 },
 ];
 
-export const XMSS_TARGET = 1000;
+export const XMSS_AGGREGATE_TIMING_TARGET = 1000;
 
 // Aggregate size in KiB
 export const AGGREGATE_SIZE_TARGET = 128;
@@ -52,17 +52,3 @@ export const xmssLatest = {
   m4vm: getLatestValue('m4vm'),
 };
 
-export const xmssSeriesConfig = {
-  i9: {
-    label: 'i9-12900H',
-    color: '#2e86ab',
-  },
-  m4: {
-    label: 'M4 Max (efficient)',
-    color: '#ef4444',
-  },
-  m4vm: {
-    label: 'M4 Max (lean-vm-simple)',
-    color: '#22c55e',
-  },
-};

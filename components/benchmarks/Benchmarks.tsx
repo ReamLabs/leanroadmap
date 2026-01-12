@@ -15,8 +15,8 @@ function getPercentageColor(subValue: string, label: string): string {
   // Use the first (or only) percentage for color determination
   const percent = parseInt(matches[0], 10);
 
-  // For size metrics, lower is better (being under target is good)
-  const lowerIsBetter = label.toLowerCase().includes('size');
+  // For size and time metrics, lower is better (being under target is good)
+  const lowerIsBetter = label.toLowerCase().includes('size') || label.toLowerCase().includes('time');
 
   if (lowerIsBetter) {
     if (percent <= 100) return 'text-emerald-600';
