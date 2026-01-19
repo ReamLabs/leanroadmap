@@ -60,6 +60,10 @@ export const devnetsData: Devnet[] = [
         title: 'High-level specification',
         url: 'https://github.com/leanEthereum/pm/blob/main/breakout-rooms/leanConsensus/pq-interop/pq-devnet-1.md',
       },
+      {
+        title: 'Devnet-1 Retrospective by Katya Ryazantseva',
+        url: 'https://hackmd.io/@katya-blockchain-dev/lean-devnet-1-retrospective',
+      },
     ],
   },
   {
