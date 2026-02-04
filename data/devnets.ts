@@ -75,7 +75,7 @@ export const devnetsData: Devnet[] = [
       'Integrate leanMultisig aggregation',
       'Set baseline performance metrics for PQ signature aggregation',
     ],
-    clients: ['Ream', 'Zeam', 'Qlean', 'Lantern', 'Lighthouse'],
+    clients: ['Ream', 'Zeam', 'Qlean', 'Lantern', 'Lighthouse', 'ethlambda'],
     links: [
       {
         title: 'High-level specification',
