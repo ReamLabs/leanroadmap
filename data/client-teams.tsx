@@ -78,4 +78,17 @@ export const clientTeamsData: ClientTeam[] = [
       { type: 'github', url: 'https://github.com/sigp' },
     ],
   },
+  {
+    id: 'ethlambda',
+    name: 'ethlambda',
+    language: 'Rust',
+    description:
+      'A minimalist and fast Lean Consensus client by LambdaClass, bringing expertise in distributed systems and blockchain infrastructure to deliver a robust and performant implementation.',
+    leanRepo: 'https://github.com/lambdaclass/ethlambda',
+    links: [
+      { type: 'website', url: 'https://lambdaclass.com' },
+      { type: 'twitter', url: 'https://x.com/ethlambda_lean' },
+      { type: 'github', url: 'https://github.com/lambdaclass' },
+    ],
+  },
 ];
