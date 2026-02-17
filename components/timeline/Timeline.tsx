@@ -52,7 +52,7 @@ export function Timeline() {
       {/* Subtle decorative gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-teal-50/30 via-transparent to-amber-50/20 pointer-events-none" />
 
-      <div className="relative px-4 md:px-8 py-4">
+      <div className="relative px-4 md:px-8 py-4 overflow-x-auto">
         <div className="relative -mr-44">
           {/* Year marker lines */}
           <div className="absolute inset-0">
