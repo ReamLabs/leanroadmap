@@ -54,7 +54,7 @@ export const devnetsData: Devnet[] = [
       'leanSig signing & verification integrated in clients',
       'Client interop with PQ signing & verification achieved',
     ],
-    clients: ['Ream', 'Zeam', 'Qlean', 'Lantern', 'Lighthouse'],
+    clients: ['Ream', 'Zeam', 'Qlean', 'Lantern', 'Grandine'],
     links: [
       {
         title: 'High-level specification',
@@ -69,18 +69,49 @@ export const devnetsData: Devnet[] = [
   {
     id: 'pq-devnet-2',
     name: 'pq-devnet-2',
-    status: 'active',
+    status: 'completed',
     date: '2026-01',
     goals: [
       'Integrate leanMultisig aggregation',
       'Set baseline performance metrics for PQ signature aggregation',
     ],
-    clients: ['Ream', 'Zeam', 'Qlean', 'Lantern', 'Lighthouse', 'ethlambda'],
+    clients: ['Ream', 'Zeam', 'Qlean', 'Lantern', 'Grandine', 'ethlambda'],
     links: [
       {
         title: 'High-level specification',
         url: 'https://github.com/leanEthereum/pm/blob/main/breakout-rooms/leanConsensus/pq-interop/pq-devnet-2.md',
       },
     ],
+  },
+  {
+    id: 'pq-devnet-3',
+    name: 'pq-devnet-3',
+    status: 'active',
+    date: '2026-02',
+    goals: [
+      'Decouple aggregation from block production via separate aggregator role',
+      'Establish protocol for propagating aggregated signatures',
+      'Create foundation for exploring different aggregation/propagation strategies',
+    ],
+    clients: ['Ream', 'Zeam', 'Qlean', 'Lantern', 'Grandine', 'ethlambda'],
+    links: [
+      {
+        title: 'High-level specification',
+        url: 'https://github.com/leanEthereum/pm/blob/main/breakout-rooms/leanConsensus/pq-interop/pq-devnet-3.md',
+      },
+    ],
+  },
+  {
+    id: 'pq-devnet-4',
+    name: 'pq-devnet-4',
+    status: 'planned',
+    date: '2026-03',
+    goals: [
+      'Enable recursive PQ signature aggregation using leanVm',
+      'Coalesce multiple aggregates for the same message into one final aggregate',
+      'Ensure blocks contain a single aggregate per message instead of multiple aggregates',
+    ],
+    clients: ['Ream', 'Zeam', 'Qlean', 'Lantern', 'Grandine', 'ethlambda'],
+    links: [],
   },
 ];

@@ -13,7 +13,7 @@ import { ResearchTracks } from '@/components/research-tracks/ResearchTracks';
 import { Overview } from '@/components/overview/Overview';
 import { LearningResources } from '@/components/learning-resources/LearningResources';
 
-const LAST_UPDATED = '2026-01';
+const LAST_UPDATED = '2026-03';
 const formatDate = (date: string) =>
   new Date(date).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
 
