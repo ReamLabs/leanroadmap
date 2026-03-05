@@ -75,7 +75,7 @@ export const devnetsData: Devnet[] = [
       'Integrate leanMultisig aggregation',
       'Set baseline performance metrics for PQ signature aggregation',
     ],
-    clients: ['Ream', 'Zeam', 'Qlean', 'Lantern', 'Grandine', 'ethlambda'],
+    clients: ['Ream', 'Zeam', 'Qlean', 'Lantern', 'Grandine', 'ethlambda', 'Peam'],
     links: [
       {
         title: 'High-level specification',
@@ -93,7 +93,7 @@ export const devnetsData: Devnet[] = [
       'Establish protocol for propagating aggregated signatures',
       'Create foundation for exploring different aggregation/propagation strategies',
     ],
-    clients: ['Ream', 'Zeam', 'Qlean', 'Lantern', 'Grandine', 'ethlambda'],
+    clients: ['Ream', 'Zeam', 'Qlean', 'Lantern', 'Grandine', 'ethlambda', 'Peam'],
     links: [
       {
         title: 'High-level specification',
@@ -111,7 +111,7 @@ export const devnetsData: Devnet[] = [
       'Coalesce multiple aggregates for the same message into one final aggregate',
       'Ensure blocks contain a single aggregate per message instead of multiple aggregates',
     ],
-    clients: ['Ream', 'Zeam', 'Qlean', 'Lantern', 'Grandine', 'ethlambda'],
+    clients: ['Ream', 'Zeam', 'Qlean', 'Lantern', 'Grandine', 'ethlambda', 'Peam'],
     links: [],
   },
 ];
