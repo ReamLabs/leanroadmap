@@ -14,6 +14,15 @@ export interface ClientTeam {
 
 export const clientTeamsData: ClientTeam[] = [
   {
+    id: 'peam',
+    name: 'Peam',
+    language: 'Rust',
+    description:
+      'A minimal, high-performance Lean Consensus client focused on clean SSZ, fast hashing, and practical networking.',
+    leanRepo: 'https://github.com/malik672/Peam',
+    links: [{ type: 'github', url: 'https://github.com/malik672/Peam' }],
+  },
+  {
     id: 'ream',
     name: 'Ream',
     language: 'Rust',
