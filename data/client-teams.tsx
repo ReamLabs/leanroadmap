@@ -100,4 +100,17 @@ export const clientTeamsData: ClientTeam[] = [
       { type: 'github', url: 'https://github.com/lambdaclass' },
     ],
   },
+  {
+    id: 'gean',
+    name: 'gean',
+    language: 'Golang',
+    description:
+      'A Go consensus client for Lean Ethereum, built around the idea that protocol simplicity is a security property.',
+    leanRepo: 'https://github.com/geanlabs/gean',
+    links: [
+      { type: 'website', url: 'https://geanlabs.com/' },
+      { type: 'twitter', url: 'https://x.com/geanclient' },
+      { type: 'github', url: 'https://github.com/geanlabs' },
+    ],
+  },
 ];
