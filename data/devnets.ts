@@ -111,7 +111,7 @@ export const devnetsData: Devnet[] = [
       'Coalesce multiple aggregates for the same message into one final aggregate',
       'Ensure blocks contain a single aggregate per message instead of multiple aggregates',
     ],
-    clients: ['Ream', 'Zeam', 'Qlean', 'Lantern', 'Grandine', 'ethlambda', 'Peam'],
+    clients: ['Ream', 'Zeam', 'Qlean', 'Lantern', 'Grandine', 'ethlambda', 'Peam', 'gean'],
     links: [],
   },
 ];
