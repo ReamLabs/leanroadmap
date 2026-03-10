@@ -103,7 +103,7 @@ export const clientTeamsData: ClientTeam[] = [
   {
     id: 'gean',
     name: 'gean',
-    language: 'Golang',
+    language: 'Go',
     description:
       'A Go consensus client for Lean Ethereum, built around the idea that protocol simplicity is a security property.',
     leanRepo: 'https://github.com/geanlabs/gean',
