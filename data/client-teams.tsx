@@ -112,5 +112,5 @@ export const clientTeamsData: ClientTeam[] = [
       'A minimal, high-performance Lean Consensus client focused on clean SSZ, fast hashing, and practical networking.',
     leanRepo: 'https://github.com/malik672/Peam',
     links: [{ type: 'github', url: 'https://github.com/malik672/Peam' }],
-  },  
+  },
 ];

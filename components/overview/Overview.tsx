@@ -102,9 +102,7 @@ export function Overview() {
 
       {/* Call to Actions - Tools */}
       <div className="col-span-1 md:col-span-2 space-y-3">
-        <h3 className="text-xs font-semibold uppercase tracking-widest text-slate-500">
-          Toolings
-        </h3>
+        <h3 className="text-xs font-semibold uppercase tracking-widest text-slate-500">Toolings</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {callToActionsData
             .filter((cta) => cta.type === 'tool')
