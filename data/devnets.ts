@@ -86,7 +86,7 @@ export const devnetsData: Devnet[] = [
   {
     id: 'pq-devnet-3',
     name: 'pq-devnet-3',
-    status: 'active',
+    status: 'completed',
     date: '2026-02',
     goals: [
       'Decouple aggregation from block production via separate aggregator role',
@@ -104,12 +104,29 @@ export const devnetsData: Devnet[] = [
   {
     id: 'pq-devnet-4',
     name: 'pq-devnet-4',
-    status: 'planned',
+    status: 'active',
     date: '2026-03',
     goals: [
       'Enable recursive PQ signature aggregation using leanVm',
       'Coalesce multiple aggregates for the same message into one final aggregate',
       'Ensure blocks contain a single aggregate per message instead of multiple aggregates',
+    ],
+    clients: ['Ream', 'Zeam', 'Qlean', 'Lantern', 'Grandine', 'ethlambda', 'gean', 'Peam'],
+    links: [
+      {
+        title: 'High-level specification',
+        url: 'https://github.com/leanEthereum/pm/blob/main/breakout-rooms/leanConsensus/pq-interop/pq-devnet-4.md',
+      },
+    ],
+  },
+  {
+    id: 'pq-devnet-5',
+    name: 'pq-devnet-5',
+    status: 'planned',
+    goals: [
+      'Produce one block-level aggregation proof that can cover multiple attestation messages',
+      'Leverage proof decomposability so per-message proofs remain recoverable from the block-level proof',
+      'Replace 3SF-mini with PQ heartbeat: committee-based block production driven by Goldfish',
     ],
     clients: ['Ream', 'Zeam', 'Qlean', 'Lantern', 'Grandine', 'ethlambda', 'gean', 'Peam'],
     links: [],
