@@ -126,7 +126,7 @@ export const devnetsData: Devnet[] = [
     goals: [
       'Produce one block-level aggregation proof that can cover multiple attestation messages',
       'Leverage proof decomposability so per-message proofs remain recoverable from the block-level proof',
-      'Replace 3SF-mini with PQ heartbeat: committee-based block production driven by Goldfish',
+      'Replace 3SF-mini with PQ heartbeat: committee-based voting under Goldfish fork-choice',
     ],
     clients: ['Ream', 'Zeam', 'Qlean', 'Lantern', 'Grandine', 'ethlambda', 'gean', 'Peam'],
     links: [],
