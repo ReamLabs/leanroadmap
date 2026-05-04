@@ -6,6 +6,9 @@ import {
   Youtube,
   MessageCircle,
   Twitter,
+  FlaskConical,
+  Gauge,
+  Telescope,
   LucideIcon,
 } from 'lucide-react';
 
@@ -13,7 +16,7 @@ export interface CallToAction {
   title: string;
   url: string;
   icon: LucideIcon;
-  type: 'repo' | 'community';
+  type: 'repo' | 'tool' | 'community';
   description?: string;
 }
 
@@ -45,6 +48,27 @@ export const callToActionsData: CallToAction[] = [
     icon: BarChart3,
     type: 'repo',
     description: 'Specifications for Lean Consensus metrics',
+  },
+  {
+    title: 'Hive',
+    url: 'https://hive.leanroadmap.org',
+    icon: FlaskConical,
+    type: 'tool',
+    description: 'Ethereum end-to-end test harness',
+  },
+  {
+    title: 'Bench',
+    url: 'https://bench.leanroadmap.org',
+    icon: Gauge,
+    type: 'tool',
+    description: 'Cross-hardware performance tracker',
+  },
+  {
+    title: 'Observatory',
+    url: 'https://observatory.leanroadmap.org',
+    icon: Telescope,
+    type: 'tool',
+    description: 'Devnet metrics & insights',
   },
   {
     title: 'PQ Interop Breakout Meetings',
