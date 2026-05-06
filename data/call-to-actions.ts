@@ -51,20 +51,20 @@ export const callToActionsData: CallToAction[] = [
   },
   {
     title: 'Hive',
-    url: 'https://hive.leanroadmap.org',
+    url: 'https://hive2.leanroadmap.org',
     icon: FlaskConical,
     type: 'tool',
     description: 'Ethereum end-to-end test harness',
   },
   {
-    title: 'Bench',
+    title: 'leanBench',
     url: 'https://bench.leanroadmap.org',
     icon: Gauge,
     type: 'tool',
     description: 'Cross-hardware performance tracker',
   },
   {
-    title: 'Observatory',
+    title: 'PQ Observatory',
     url: 'https://observatory.leanroadmap.org',
     icon: Telescope,
     type: 'tool',
