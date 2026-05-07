@@ -51,7 +51,7 @@ export const callToActionsData: CallToAction[] = [
   },
   {
     title: 'Hive',
-    url: 'https://hive2.leanroadmap.org',
+    url: 'https://hive.leanroadmap.org',
     icon: FlaskConical,
     type: 'tool',
     description: 'Ethereum end-to-end test harness',
