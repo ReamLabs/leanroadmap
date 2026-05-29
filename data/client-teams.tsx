@@ -86,7 +86,7 @@ export const clientTeamsData: ClientTeam[] = [
       'A minimalist and fast Lean Consensus client by LambdaClass, bringing expertise in distributed systems and blockchain infrastructure to deliver a robust and performant implementation.',
     leanRepo: 'https://github.com/lambdaclass/ethlambda',
     links: [
-      { type: 'website', url: 'https://lambdaclass.com' },
+      { type: 'website', url: 'https://ethlambda.xyz' },
       { type: 'twitter', url: 'https://x.com/ethlambda_lean' },
       { type: 'github', url: 'https://github.com/lambdaclass' },
     ],
